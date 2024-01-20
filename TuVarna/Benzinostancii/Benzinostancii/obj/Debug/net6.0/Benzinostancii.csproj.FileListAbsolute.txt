@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\bin\Debug\net6.0\Benzinostancii.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\bin\Debug\net6.0\Benzinostancii.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\bin\Debug\net6.0\Benzinostancii.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\bin\Debug\net6.0\Benzinostancii.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\bin\Debug\net6.0\Benzinostancii.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\obj\Debug\net6.0\Benzinostancii.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\obj\Debug\net6.0\Benzinostancii.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\obj\Debug\net6.0\Benzinostancii.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\obj\Debug\net6.0\Benzinostancii.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\obj\Debug\net6.0\Benzinostancii.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\obj\Debug\net6.0\Benzinostancii.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\obj\Debug\net6.0\refint\Benzinostancii.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\obj\Debug\net6.0\Benzinostancii.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\obj\Debug\net6.0\Benzinostancii.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Benzinostancii\Benzinostancii\obj\Debug\net6.0\ref\Benzinostancii.dll

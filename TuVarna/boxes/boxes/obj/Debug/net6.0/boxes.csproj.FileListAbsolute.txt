@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\bin\Debug\net6.0\boxes.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\bin\Debug\net6.0\boxes.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\bin\Debug\net6.0\boxes.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\bin\Debug\net6.0\boxes.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\bin\Debug\net6.0\boxes.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\obj\Debug\net6.0\boxes.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\obj\Debug\net6.0\boxes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\obj\Debug\net6.0\boxes.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\obj\Debug\net6.0\boxes.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\obj\Debug\net6.0\boxes.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\obj\Debug\net6.0\boxes.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\obj\Debug\net6.0\refint\boxes.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\obj\Debug\net6.0\boxes.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\obj\Debug\net6.0\boxes.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\boxes\boxes\obj\Debug\net6.0\ref\boxes.dll

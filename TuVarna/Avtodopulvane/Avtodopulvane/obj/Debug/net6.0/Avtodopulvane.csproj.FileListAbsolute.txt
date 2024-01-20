@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\bin\Debug\net6.0\Avtodopulvane.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\bin\Debug\net6.0\Avtodopulvane.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\bin\Debug\net6.0\Avtodopulvane.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\bin\Debug\net6.0\Avtodopulvane.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\bin\Debug\net6.0\Avtodopulvane.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\obj\Debug\net6.0\Avtodopulvane.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\obj\Debug\net6.0\Avtodopulvane.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\obj\Debug\net6.0\Avtodopulvane.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\obj\Debug\net6.0\Avtodopulvane.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\obj\Debug\net6.0\Avtodopulvane.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\obj\Debug\net6.0\Avtodopulvane.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\obj\Debug\net6.0\refint\Avtodopulvane.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\obj\Debug\net6.0\Avtodopulvane.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\obj\Debug\net6.0\Avtodopulvane.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Avtodopulvane\Avtodopulvane\obj\Debug\net6.0\ref\Avtodopulvane.dll

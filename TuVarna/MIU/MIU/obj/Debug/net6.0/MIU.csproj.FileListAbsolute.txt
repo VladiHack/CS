@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\bin\Debug\net6.0\MIU.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\bin\Debug\net6.0\MIU.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\bin\Debug\net6.0\MIU.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\bin\Debug\net6.0\MIU.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\bin\Debug\net6.0\MIU.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\obj\Debug\net6.0\MIU.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\obj\Debug\net6.0\MIU.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\obj\Debug\net6.0\MIU.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\obj\Debug\net6.0\MIU.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\obj\Debug\net6.0\MIU.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\obj\Debug\net6.0\MIU.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\obj\Debug\net6.0\refint\MIU.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\obj\Debug\net6.0\MIU.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\obj\Debug\net6.0\MIU.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\MIU\MIU\obj\Debug\net6.0\ref\MIU.dll

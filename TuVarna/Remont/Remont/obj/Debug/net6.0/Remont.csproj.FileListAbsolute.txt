@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\bin\Debug\net6.0\Remont.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\bin\Debug\net6.0\Remont.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\bin\Debug\net6.0\Remont.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\bin\Debug\net6.0\Remont.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\bin\Debug\net6.0\Remont.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\obj\Debug\net6.0\Remont.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\obj\Debug\net6.0\Remont.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\obj\Debug\net6.0\Remont.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\obj\Debug\net6.0\Remont.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\obj\Debug\net6.0\Remont.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\obj\Debug\net6.0\Remont.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\obj\Debug\net6.0\refint\Remont.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\obj\Debug\net6.0\Remont.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\obj\Debug\net6.0\Remont.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Remont\Remont\obj\Debug\net6.0\ref\Remont.dll

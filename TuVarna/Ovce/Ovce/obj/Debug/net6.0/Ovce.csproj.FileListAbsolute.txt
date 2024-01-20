@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\bin\Debug\net6.0\Ovce.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\bin\Debug\net6.0\Ovce.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\bin\Debug\net6.0\Ovce.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\bin\Debug\net6.0\Ovce.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\bin\Debug\net6.0\Ovce.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\obj\Debug\net6.0\Ovce.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\obj\Debug\net6.0\Ovce.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\obj\Debug\net6.0\Ovce.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\obj\Debug\net6.0\Ovce.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\obj\Debug\net6.0\Ovce.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\obj\Debug\net6.0\Ovce.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\obj\Debug\net6.0\refint\Ovce.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\obj\Debug\net6.0\Ovce.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\obj\Debug\net6.0\Ovce.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ovce\Ovce\obj\Debug\net6.0\ref\Ovce.dll

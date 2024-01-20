@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\bin\Debug\net6.0\ChainVarna.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\bin\Debug\net6.0\ChainVarna.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\bin\Debug\net6.0\ChainVarna.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\bin\Debug\net6.0\ChainVarna.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\bin\Debug\net6.0\ChainVarna.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\obj\Debug\net6.0\ChainVarna.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\obj\Debug\net6.0\ChainVarna.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\obj\Debug\net6.0\ChainVarna.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\obj\Debug\net6.0\ChainVarna.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\obj\Debug\net6.0\ChainVarna.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\obj\Debug\net6.0\ChainVarna.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\obj\Debug\net6.0\refint\ChainVarna.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\obj\Debug\net6.0\ChainVarna.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\obj\Debug\net6.0\ChainVarna.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\ChainVarna\ChainVarna\obj\Debug\net6.0\ref\ChainVarna.dll

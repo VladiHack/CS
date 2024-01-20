@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\bin\Debug\net6.0\PirateTreasure.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\bin\Debug\net6.0\PirateTreasure.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\bin\Debug\net6.0\PirateTreasure.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\bin\Debug\net6.0\PirateTreasure.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\bin\Debug\net6.0\PirateTreasure.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\obj\Debug\net6.0\PirateTreasure.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\obj\Debug\net6.0\PirateTreasure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\obj\Debug\net6.0\PirateTreasure.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\obj\Debug\net6.0\PirateTreasure.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\obj\Debug\net6.0\PirateTreasure.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\obj\Debug\net6.0\PirateTreasure.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\obj\Debug\net6.0\refint\PirateTreasure.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\obj\Debug\net6.0\PirateTreasure.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\obj\Debug\net6.0\PirateTreasure.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PirateTreasure\PirateTreasure\obj\Debug\net6.0\ref\PirateTreasure.dll

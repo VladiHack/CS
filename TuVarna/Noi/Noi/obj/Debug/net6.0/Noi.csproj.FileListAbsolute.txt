@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\bin\Debug\net6.0\Noi.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\bin\Debug\net6.0\Noi.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\bin\Debug\net6.0\Noi.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\bin\Debug\net6.0\Noi.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\bin\Debug\net6.0\Noi.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\obj\Debug\net6.0\Noi.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\obj\Debug\net6.0\Noi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\obj\Debug\net6.0\Noi.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\obj\Debug\net6.0\Noi.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\obj\Debug\net6.0\Noi.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\obj\Debug\net6.0\Noi.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\obj\Debug\net6.0\refint\Noi.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\obj\Debug\net6.0\Noi.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\obj\Debug\net6.0\Noi.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Noi\Noi\obj\Debug\net6.0\ref\Noi.dll

@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\bin\Debug\net6.0\PrimesFromAToB.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\bin\Debug\net6.0\PrimesFromAToB.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\bin\Debug\net6.0\PrimesFromAToB.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\bin\Debug\net6.0\PrimesFromAToB.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\bin\Debug\net6.0\PrimesFromAToB.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\obj\Debug\net6.0\PrimesFromAToB.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\obj\Debug\net6.0\PrimesFromAToB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\obj\Debug\net6.0\PrimesFromAToB.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\obj\Debug\net6.0\PrimesFromAToB.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\obj\Debug\net6.0\PrimesFromAToB.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\obj\Debug\net6.0\PrimesFromAToB.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\obj\Debug\net6.0\refint\PrimesFromAToB.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\obj\Debug\net6.0\PrimesFromAToB.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\obj\Debug\net6.0\PrimesFromAToB.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PrimesFromAToB\PrimesFromAToB\obj\Debug\net6.0\ref\PrimesFromAToB.dll

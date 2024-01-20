@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\bin\Debug\net6.0\PutPrezGrada.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\bin\Debug\net6.0\PutPrezGrada.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\bin\Debug\net6.0\PutPrezGrada.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\bin\Debug\net6.0\PutPrezGrada.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\bin\Debug\net6.0\PutPrezGrada.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\obj\Debug\net6.0\PutPrezGrada.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\obj\Debug\net6.0\PutPrezGrada.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\obj\Debug\net6.0\PutPrezGrada.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\obj\Debug\net6.0\PutPrezGrada.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\obj\Debug\net6.0\PutPrezGrada.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\obj\Debug\net6.0\PutPrezGrada.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\obj\Debug\net6.0\refint\PutPrezGrada.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\obj\Debug\net6.0\PutPrezGrada.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\obj\Debug\net6.0\PutPrezGrada.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\PutPrezGrada\PutPrezGrada\obj\Debug\net6.0\ref\PutPrezGrada.dll

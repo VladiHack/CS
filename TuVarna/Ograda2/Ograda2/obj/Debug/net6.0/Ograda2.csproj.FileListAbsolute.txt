@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\obj\Debug\net6.0\Ograda2.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\obj\Debug\net6.0\Ograda2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\obj\Debug\net6.0\Ograda2.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\obj\Debug\net6.0\Ograda2.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\obj\Debug\net6.0\Ograda2.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\bin\Debug\net6.0\Ograda2.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\bin\Debug\net6.0\Ograda2.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\bin\Debug\net6.0\Ograda2.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\bin\Debug\net6.0\Ograda2.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\bin\Debug\net6.0\Ograda2.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\obj\Debug\net6.0\Ograda2.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\obj\Debug\net6.0\refint\Ograda2.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\obj\Debug\net6.0\Ograda2.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\obj\Debug\net6.0\Ograda2.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Ograda2\Ograda2\obj\Debug\net6.0\ref\Ograda2.dll

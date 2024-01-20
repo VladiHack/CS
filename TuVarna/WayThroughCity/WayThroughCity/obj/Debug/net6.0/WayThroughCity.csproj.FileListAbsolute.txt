@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\bin\Debug\net6.0\WayThroughCity.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\bin\Debug\net6.0\WayThroughCity.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\bin\Debug\net6.0\WayThroughCity.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\bin\Debug\net6.0\WayThroughCity.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\bin\Debug\net6.0\WayThroughCity.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\obj\Debug\net6.0\WayThroughCity.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\obj\Debug\net6.0\WayThroughCity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\obj\Debug\net6.0\WayThroughCity.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\obj\Debug\net6.0\WayThroughCity.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\obj\Debug\net6.0\WayThroughCity.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\obj\Debug\net6.0\WayThroughCity.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\obj\Debug\net6.0\refint\WayThroughCity.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\obj\Debug\net6.0\WayThroughCity.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\obj\Debug\net6.0\WayThroughCity.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\WayThroughCity\WayThroughCity\obj\Debug\net6.0\ref\WayThroughCity.dll

@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\bin\Debug\net6.0\Presents.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\bin\Debug\net6.0\Presents.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\bin\Debug\net6.0\Presents.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\bin\Debug\net6.0\Presents.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\bin\Debug\net6.0\Presents.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\obj\Debug\net6.0\Presents.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\obj\Debug\net6.0\Presents.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\obj\Debug\net6.0\Presents.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\obj\Debug\net6.0\Presents.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\obj\Debug\net6.0\Presents.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\obj\Debug\net6.0\Presents.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\obj\Debug\net6.0\refint\Presents.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\obj\Debug\net6.0\Presents.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\obj\Debug\net6.0\Presents.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Presents\Presents\obj\Debug\net6.0\ref\Presents.dll

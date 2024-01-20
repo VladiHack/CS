@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\bin\Debug\net6.0\Tablica.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\bin\Debug\net6.0\Tablica.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\bin\Debug\net6.0\Tablica.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\bin\Debug\net6.0\Tablica.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\bin\Debug\net6.0\Tablica.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\obj\Debug\net6.0\Tablica.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\obj\Debug\net6.0\Tablica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\obj\Debug\net6.0\Tablica.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\obj\Debug\net6.0\Tablica.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\obj\Debug\net6.0\Tablica.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\obj\Debug\net6.0\Tablica.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\obj\Debug\net6.0\refint\Tablica.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\obj\Debug\net6.0\Tablica.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\obj\Debug\net6.0\Tablica.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Tablica\Tablica\obj\Debug\net6.0\ref\Tablica.dll

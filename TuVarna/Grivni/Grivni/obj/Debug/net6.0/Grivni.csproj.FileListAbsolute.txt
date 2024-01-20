@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\bin\Debug\net6.0\Grivni.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\bin\Debug\net6.0\Grivni.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\bin\Debug\net6.0\Grivni.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\bin\Debug\net6.0\Grivni.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\bin\Debug\net6.0\Grivni.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\obj\Debug\net6.0\Grivni.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\obj\Debug\net6.0\Grivni.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\obj\Debug\net6.0\Grivni.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\obj\Debug\net6.0\Grivni.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\obj\Debug\net6.0\Grivni.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\obj\Debug\net6.0\Grivni.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\obj\Debug\net6.0\refint\Grivni.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\obj\Debug\net6.0\Grivni.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\obj\Debug\net6.0\Grivni.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Grivni\Grivni\obj\Debug\net6.0\ref\Grivni.dll

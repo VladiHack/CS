@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\bin\Debug\net6.0\Substring2Times.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\bin\Debug\net6.0\Substring2Times.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\bin\Debug\net6.0\Substring2Times.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\bin\Debug\net6.0\Substring2Times.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\bin\Debug\net6.0\Substring2Times.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\obj\Debug\net6.0\Substring2Times.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\obj\Debug\net6.0\Substring2Times.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\obj\Debug\net6.0\Substring2Times.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\obj\Debug\net6.0\Substring2Times.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\obj\Debug\net6.0\Substring2Times.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\obj\Debug\net6.0\Substring2Times.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\obj\Debug\net6.0\refint\Substring2Times.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\obj\Debug\net6.0\Substring2Times.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\obj\Debug\net6.0\Substring2Times.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Substring2Times\Substring2Times\obj\Debug\net6.0\ref\Substring2Times.dll

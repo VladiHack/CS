@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\bin\Debug\net6.0\Plochki.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\bin\Debug\net6.0\Plochki.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\bin\Debug\net6.0\Plochki.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\bin\Debug\net6.0\Plochki.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\bin\Debug\net6.0\Plochki.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\obj\Debug\net6.0\Plochki.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\obj\Debug\net6.0\Plochki.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\obj\Debug\net6.0\Plochki.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\obj\Debug\net6.0\Plochki.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\obj\Debug\net6.0\Plochki.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\obj\Debug\net6.0\Plochki.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\obj\Debug\net6.0\refint\Plochki.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\obj\Debug\net6.0\Plochki.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\obj\Debug\net6.0\Plochki.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Plochki\Plochki\obj\Debug\net6.0\ref\Plochki.dll

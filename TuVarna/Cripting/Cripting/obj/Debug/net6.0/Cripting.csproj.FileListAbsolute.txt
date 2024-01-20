@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\bin\Debug\net6.0\Cripting.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\bin\Debug\net6.0\Cripting.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\bin\Debug\net6.0\Cripting.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\bin\Debug\net6.0\Cripting.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\bin\Debug\net6.0\Cripting.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\obj\Debug\net6.0\Cripting.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\obj\Debug\net6.0\Cripting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\obj\Debug\net6.0\Cripting.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\obj\Debug\net6.0\Cripting.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\obj\Debug\net6.0\Cripting.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\obj\Debug\net6.0\Cripting.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\obj\Debug\net6.0\refint\Cripting.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\obj\Debug\net6.0\Cripting.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\obj\Debug\net6.0\Cripting.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Cripting\Cripting\obj\Debug\net6.0\ref\Cripting.dll

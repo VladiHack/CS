@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\bin\Debug\net6.0\Izpit.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\bin\Debug\net6.0\Izpit.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\bin\Debug\net6.0\Izpit.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\bin\Debug\net6.0\Izpit.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\bin\Debug\net6.0\Izpit.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\obj\Debug\net6.0\Izpit.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\obj\Debug\net6.0\Izpit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\obj\Debug\net6.0\Izpit.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\obj\Debug\net6.0\Izpit.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\obj\Debug\net6.0\Izpit.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\obj\Debug\net6.0\Izpit.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\obj\Debug\net6.0\refint\Izpit.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\obj\Debug\net6.0\Izpit.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\obj\Debug\net6.0\Izpit.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Izpit\Izpit\obj\Debug\net6.0\ref\Izpit.dll

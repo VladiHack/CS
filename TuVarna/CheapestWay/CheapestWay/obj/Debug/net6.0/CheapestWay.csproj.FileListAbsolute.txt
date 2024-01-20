@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\bin\Debug\net6.0\CheapestWay.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\bin\Debug\net6.0\CheapestWay.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\bin\Debug\net6.0\CheapestWay.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\bin\Debug\net6.0\CheapestWay.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\bin\Debug\net6.0\CheapestWay.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\obj\Debug\net6.0\CheapestWay.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\obj\Debug\net6.0\CheapestWay.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\obj\Debug\net6.0\CheapestWay.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\obj\Debug\net6.0\CheapestWay.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\obj\Debug\net6.0\CheapestWay.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\obj\Debug\net6.0\CheapestWay.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\obj\Debug\net6.0\refint\CheapestWay.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\obj\Debug\net6.0\CheapestWay.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\obj\Debug\net6.0\CheapestWay.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\CheapestWay\CheapestWay\obj\Debug\net6.0\ref\CheapestWay.dll

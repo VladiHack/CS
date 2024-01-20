@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\bin\Debug\net6.0\putishta.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\bin\Debug\net6.0\putishta.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\bin\Debug\net6.0\putishta.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\bin\Debug\net6.0\putishta.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\bin\Debug\net6.0\putishta.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\obj\Debug\net6.0\putishta.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\obj\Debug\net6.0\putishta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\obj\Debug\net6.0\putishta.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\obj\Debug\net6.0\putishta.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\obj\Debug\net6.0\putishta.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\obj\Debug\net6.0\putishta.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\obj\Debug\net6.0\refint\putishta.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\obj\Debug\net6.0\putishta.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\obj\Debug\net6.0\putishta.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\putishta\putishta\obj\Debug\net6.0\ref\putishta.dll

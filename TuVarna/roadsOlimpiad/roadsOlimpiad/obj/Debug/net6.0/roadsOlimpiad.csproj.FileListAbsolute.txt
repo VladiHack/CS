@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\bin\Debug\net6.0\roadsOlimpiad.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\bin\Debug\net6.0\roadsOlimpiad.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\bin\Debug\net6.0\roadsOlimpiad.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\bin\Debug\net6.0\roadsOlimpiad.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\bin\Debug\net6.0\roadsOlimpiad.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\obj\Debug\net6.0\roadsOlimpiad.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\obj\Debug\net6.0\roadsOlimpiad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\obj\Debug\net6.0\roadsOlimpiad.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\obj\Debug\net6.0\roadsOlimpiad.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\obj\Debug\net6.0\roadsOlimpiad.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\obj\Debug\net6.0\roadsOlimpiad.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\obj\Debug\net6.0\refint\roadsOlimpiad.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\obj\Debug\net6.0\roadsOlimpiad.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\obj\Debug\net6.0\roadsOlimpiad.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\roadsOlimpiad\roadsOlimpiad\obj\Debug\net6.0\ref\roadsOlimpiad.dll

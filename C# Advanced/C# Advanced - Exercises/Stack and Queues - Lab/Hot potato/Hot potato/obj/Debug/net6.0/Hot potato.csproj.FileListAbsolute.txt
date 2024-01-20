@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\bin\Debug\net6.0\Hot potato.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\bin\Debug\net6.0\Hot potato.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\bin\Debug\net6.0\Hot potato.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\bin\Debug\net6.0\Hot potato.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\bin\Debug\net6.0\Hot potato.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\obj\Debug\net6.0\Hot potato.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\obj\Debug\net6.0\Hot potato.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\obj\Debug\net6.0\Hot potato.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\obj\Debug\net6.0\Hot potato.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\obj\Debug\net6.0\Hot potato.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\obj\Debug\net6.0\Hot potato.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\obj\Debug\net6.0\refint\Hot potato.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\obj\Debug\net6.0\Hot potato.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\obj\Debug\net6.0\Hot potato.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Lab\Hot potato\Hot potato\obj\Debug\net6.0\ref\Hot potato.dll

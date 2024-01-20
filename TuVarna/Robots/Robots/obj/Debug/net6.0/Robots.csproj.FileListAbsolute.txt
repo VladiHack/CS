@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\bin\Debug\net6.0\Robots.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\bin\Debug\net6.0\Robots.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\bin\Debug\net6.0\Robots.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\bin\Debug\net6.0\Robots.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\bin\Debug\net6.0\Robots.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\obj\Debug\net6.0\Robots.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\obj\Debug\net6.0\Robots.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\obj\Debug\net6.0\Robots.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\obj\Debug\net6.0\Robots.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\obj\Debug\net6.0\Robots.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\obj\Debug\net6.0\Robots.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\obj\Debug\net6.0\refint\Robots.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\obj\Debug\net6.0\Robots.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\obj\Debug\net6.0\Robots.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\Robots\Robots\obj\Debug\net6.0\ref\Robots.dll

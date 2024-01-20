@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\bin\Debug\net6.0\TablicaProstiDelene.exe
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\bin\Debug\net6.0\TablicaProstiDelene.deps.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\bin\Debug\net6.0\TablicaProstiDelene.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\bin\Debug\net6.0\TablicaProstiDelene.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\bin\Debug\net6.0\TablicaProstiDelene.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\obj\Debug\net6.0\TablicaProstiDelene.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\obj\Debug\net6.0\TablicaProstiDelene.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\obj\Debug\net6.0\TablicaProstiDelene.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\obj\Debug\net6.0\TablicaProstiDelene.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\obj\Debug\net6.0\TablicaProstiDelene.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\obj\Debug\net6.0\TablicaProstiDelene.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\obj\Debug\net6.0\refint\TablicaProstiDelene.dll
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\obj\Debug\net6.0\TablicaProstiDelene.pdb
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\obj\Debug\net6.0\TablicaProstiDelene.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\TUVarma\TablicaProstiDelene\TablicaProstiDelene\obj\Debug\net6.0\ref\TablicaProstiDelene.dll
