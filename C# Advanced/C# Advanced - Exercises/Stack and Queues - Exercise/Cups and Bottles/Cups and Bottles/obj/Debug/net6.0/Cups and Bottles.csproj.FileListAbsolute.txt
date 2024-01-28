@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\bin\Debug\net6.0\Cups and Bottles.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\bin\Debug\net6.0\Cups and Bottles.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\bin\Debug\net6.0\Cups and Bottles.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\bin\Debug\net6.0\Cups and Bottles.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\bin\Debug\net6.0\Cups and Bottles.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\obj\Debug\net6.0\Cups and Bottles.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\obj\Debug\net6.0\Cups and Bottles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\obj\Debug\net6.0\Cups and Bottles.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\obj\Debug\net6.0\Cups and Bottles.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\obj\Debug\net6.0\Cups and Bottles.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\obj\Debug\net6.0\Cups and Bottles.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\obj\Debug\net6.0\refint\Cups and Bottles.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\obj\Debug\net6.0\Cups and Bottles.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\obj\Debug\net6.0\Cups and Bottles.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Stack and Queues - Exercise\Cups and Bottles\Cups and Bottles\obj\Debug\net6.0\ref\Cups and Bottles.dll
