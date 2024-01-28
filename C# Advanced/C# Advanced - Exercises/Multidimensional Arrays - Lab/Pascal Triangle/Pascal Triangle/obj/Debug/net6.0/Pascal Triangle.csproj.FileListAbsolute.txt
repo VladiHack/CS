@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\bin\Debug\net6.0\Pascal Triangle.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\bin\Debug\net6.0\Pascal Triangle.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\bin\Debug\net6.0\Pascal Triangle.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\bin\Debug\net6.0\Pascal Triangle.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\bin\Debug\net6.0\Pascal Triangle.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\obj\Debug\net6.0\Pascal Triangle.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\obj\Debug\net6.0\Pascal Triangle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\obj\Debug\net6.0\Pascal Triangle.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\obj\Debug\net6.0\Pascal Triangle.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\obj\Debug\net6.0\Pascal Triangle.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\obj\Debug\net6.0\Pascal Triangle.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\obj\Debug\net6.0\refint\Pascal Triangle.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\obj\Debug\net6.0\Pascal Triangle.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\obj\Debug\net6.0\Pascal Triangle.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Lab\Pascal Triangle\Pascal Triangle\obj\Debug\net6.0\ref\Pascal Triangle.dll
