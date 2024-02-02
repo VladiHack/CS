@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\bin\Debug\net6.0\Bomb.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\bin\Debug\net6.0\Bomb.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\bin\Debug\net6.0\Bomb.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\bin\Debug\net6.0\Bomb.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\bin\Debug\net6.0\Bomb.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\obj\Debug\net6.0\Bomb.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\obj\Debug\net6.0\Bomb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\obj\Debug\net6.0\Bomb.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\obj\Debug\net6.0\Bomb.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\obj\Debug\net6.0\Bomb.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\obj\Debug\net6.0\Bomb.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\obj\Debug\net6.0\refint\Bomb.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\obj\Debug\net6.0\Bomb.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\obj\Debug\net6.0\Bomb.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Bomb\Bomb\obj\Debug\net6.0\ref\Bomb.dll
