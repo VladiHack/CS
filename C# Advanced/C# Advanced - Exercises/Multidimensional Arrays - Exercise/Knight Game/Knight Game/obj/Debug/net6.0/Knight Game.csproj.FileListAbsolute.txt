@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\bin\Debug\net6.0\Knight Game.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\bin\Debug\net6.0\Knight Game.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\bin\Debug\net6.0\Knight Game.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\bin\Debug\net6.0\Knight Game.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\bin\Debug\net6.0\Knight Game.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\obj\Debug\net6.0\Knight Game.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\obj\Debug\net6.0\Knight Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\obj\Debug\net6.0\Knight Game.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\obj\Debug\net6.0\Knight Game.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\obj\Debug\net6.0\Knight Game.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\obj\Debug\net6.0\Knight Game.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\obj\Debug\net6.0\refint\Knight Game.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\obj\Debug\net6.0\Knight Game.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\obj\Debug\net6.0\Knight Game.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Multidimensional Arrays - Exercise\Knight Game\Knight Game\obj\Debug\net6.0\ref\Knight Game.dll
