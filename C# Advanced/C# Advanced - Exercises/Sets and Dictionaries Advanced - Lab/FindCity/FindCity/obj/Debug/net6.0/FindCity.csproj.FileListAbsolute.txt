@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\bin\Debug\net6.0\FindCity.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\bin\Debug\net6.0\FindCity.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\bin\Debug\net6.0\FindCity.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\bin\Debug\net6.0\FindCity.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\bin\Debug\net6.0\FindCity.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\obj\Debug\net6.0\FindCity.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\obj\Debug\net6.0\FindCity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\obj\Debug\net6.0\FindCity.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\obj\Debug\net6.0\FindCity.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\obj\Debug\net6.0\FindCity.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\obj\Debug\net6.0\FindCity.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\obj\Debug\net6.0\refint\FindCity.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\obj\Debug\net6.0\FindCity.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\obj\Debug\net6.0\FindCity.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\FindCity\FindCity\obj\Debug\net6.0\ref\FindCity.dll

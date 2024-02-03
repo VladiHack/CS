@@ -1,0 +1,5 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Continents, cities and countries\CityFinder\CityFinder\obj\Debug\net8.0\CityFinder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Continents, cities and countries\CityFinder\CityFinder\obj\Debug\net8.0\CityFinder.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Continents, cities and countries\CityFinder\CityFinder\obj\Debug\net8.0\CityFinder.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Continents, cities and countries\CityFinder\CityFinder\obj\Debug\net8.0\CityFinder.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Continents, cities and countries\CityFinder\CityFinder\obj\Debug\net8.0\CityFinder.sourcelink.json
