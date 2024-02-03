@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\bin\Debug\net6.0\Party.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\bin\Debug\net6.0\Party.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\bin\Debug\net6.0\Party.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\bin\Debug\net6.0\Party.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\bin\Debug\net6.0\Party.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\obj\Debug\net6.0\Party.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\obj\Debug\net6.0\Party.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\obj\Debug\net6.0\Party.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\obj\Debug\net6.0\Party.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\obj\Debug\net6.0\Party.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\obj\Debug\net6.0\Party.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\obj\Debug\net6.0\refint\Party.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\obj\Debug\net6.0\Party.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\obj\Debug\net6.0\Party.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Lab\Party\Party\obj\Debug\net6.0\ref\Party.dll
