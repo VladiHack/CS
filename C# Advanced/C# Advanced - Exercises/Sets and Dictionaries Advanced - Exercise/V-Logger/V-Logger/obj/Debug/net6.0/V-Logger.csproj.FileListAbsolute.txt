@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\bin\Debug\net6.0\V-Logger.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\bin\Debug\net6.0\V-Logger.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\bin\Debug\net6.0\V-Logger.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\bin\Debug\net6.0\V-Logger.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\bin\Debug\net6.0\V-Logger.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\obj\Debug\net6.0\V-Logger.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\obj\Debug\net6.0\V-Logger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\obj\Debug\net6.0\V-Logger.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\obj\Debug\net6.0\V-Logger.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\obj\Debug\net6.0\V-Logger.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\obj\Debug\net6.0\V-Logger.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\obj\Debug\net6.0\refint\V-Logger.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\obj\Debug\net6.0\V-Logger.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\obj\Debug\net6.0\V-Logger.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\V-Logger\V-Logger\obj\Debug\net6.0\ref\V-Logger.dll
