@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\bin\Debug\net6.0\Ranking.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\bin\Debug\net6.0\Ranking.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\bin\Debug\net6.0\Ranking.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\bin\Debug\net6.0\Ranking.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\bin\Debug\net6.0\Ranking.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\obj\Debug\net6.0\Ranking.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\obj\Debug\net6.0\Ranking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\obj\Debug\net6.0\Ranking.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\obj\Debug\net6.0\Ranking.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\obj\Debug\net6.0\Ranking.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\obj\Debug\net6.0\Ranking.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\obj\Debug\net6.0\refint\Ranking.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\obj\Debug\net6.0\Ranking.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\obj\Debug\net6.0\Ranking.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Ranking\Ranking\obj\Debug\net6.0\ref\Ranking.dll
