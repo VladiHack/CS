@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\bin\Debug\net6.0\Exam Results.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\bin\Debug\net6.0\Exam Results.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\bin\Debug\net6.0\Exam Results.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\bin\Debug\net6.0\Exam Results.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\bin\Debug\net6.0\Exam Results.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\obj\Debug\net6.0\Exam Results.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\obj\Debug\net6.0\Exam Results.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\obj\Debug\net6.0\Exam Results.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\obj\Debug\net6.0\Exam Results.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\obj\Debug\net6.0\Exam Results.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\obj\Debug\net6.0\Exam Results.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\obj\Debug\net6.0\refint\Exam Results.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\obj\Debug\net6.0\Exam Results.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\obj\Debug\net6.0\Exam Results.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\Exam Results\Exam Results\obj\Debug\net6.0\ref\Exam Results.dll

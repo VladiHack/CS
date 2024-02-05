@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\bin\Debug\net6.0\ForeBook.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\bin\Debug\net6.0\ForeBook.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\bin\Debug\net6.0\ForeBook.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\bin\Debug\net6.0\ForeBook.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\bin\Debug\net6.0\ForeBook.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\obj\Debug\net6.0\ForeBook.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\obj\Debug\net6.0\ForeBook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\obj\Debug\net6.0\ForeBook.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\obj\Debug\net6.0\ForeBook.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\obj\Debug\net6.0\ForeBook.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\obj\Debug\net6.0\ForeBook.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\obj\Debug\net6.0\refint\ForeBook.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\obj\Debug\net6.0\ForeBook.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\obj\Debug\net6.0\ForeBook.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Sets and Dictionaries Advanced - Exercise\ForeBook\ForeBook\obj\Debug\net6.0\ref\ForeBook.dll
