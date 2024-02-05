@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\bin\Debug\net6.0\Count Uppercase Words.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\bin\Debug\net6.0\Count Uppercase Words.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\bin\Debug\net6.0\Count Uppercase Words.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\bin\Debug\net6.0\Count Uppercase Words.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\bin\Debug\net6.0\Count Uppercase Words.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\obj\Debug\net6.0\Count Uppercase Words.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\obj\Debug\net6.0\Count Uppercase Words.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\obj\Debug\net6.0\Count Uppercase Words.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\obj\Debug\net6.0\Count Uppercase Words.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\obj\Debug\net6.0\Count Uppercase Words.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\obj\Debug\net6.0\Count Uppercase Words.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\obj\Debug\net6.0\refint\Count Uppercase Words.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\obj\Debug\net6.0\Count Uppercase Words.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\obj\Debug\net6.0\Count Uppercase Words.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Lab\Count Uppercase Words\Count Uppercase Words\obj\Debug\net6.0\ref\Count Uppercase Words.dll
