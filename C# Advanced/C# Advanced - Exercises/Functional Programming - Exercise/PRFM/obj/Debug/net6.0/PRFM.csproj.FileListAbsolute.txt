@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\bin\Debug\net6.0\PRFM.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\bin\Debug\net6.0\PRFM.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\bin\Debug\net6.0\PRFM.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\bin\Debug\net6.0\PRFM.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\bin\Debug\net6.0\PRFM.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\obj\Debug\net6.0\PRFM.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\obj\Debug\net6.0\PRFM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\obj\Debug\net6.0\PRFM.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\obj\Debug\net6.0\PRFM.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\obj\Debug\net6.0\PRFM.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\obj\Debug\net6.0\PRFM.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\obj\Debug\net6.0\refint\PRFM.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\obj\Debug\net6.0\PRFM.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\obj\Debug\net6.0\PRFM.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Functional Programming - Exercise\PRFM\obj\Debug\net6.0\ref\PRFM.dll
