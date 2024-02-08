@@ -1,0 +1,15 @@
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\bin\Debug\net6.0\Smallest Coin Number.exe
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\bin\Debug\net6.0\Smallest Coin Number.deps.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\bin\Debug\net6.0\Smallest Coin Number.runtimeconfig.json
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\bin\Debug\net6.0\Smallest Coin Number.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\bin\Debug\net6.0\Smallest Coin Number.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\obj\Debug\net6.0\Smallest Coin Number.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\obj\Debug\net6.0\Smallest Coin Number.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\obj\Debug\net6.0\Smallest Coin Number.AssemblyInfoInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\obj\Debug\net6.0\Smallest Coin Number.AssemblyInfo.cs
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\obj\Debug\net6.0\Smallest Coin Number.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\obj\Debug\net6.0\Smallest Coin Number.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\obj\Debug\net6.0\refint\Smallest Coin Number.dll
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\obj\Debug\net6.0\Smallest Coin Number.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\obj\Debug\net6.0\Smallest Coin Number.genruntimeconfig.cache
+C:\Users\Vladimir Boychev\Desktop\C#\C# Advanced\C# Advanced - Exercises\Algorithms\Smallest Coin Number\obj\Debug\net6.0\ref\Smallest Coin Number.dll
