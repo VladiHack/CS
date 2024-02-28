@@ -518,6 +518,7 @@ namespace HospitalProject
             this.btnActionStaff.TabIndex = 25;
             this.btnActionStaff.Text = "Register";
             this.btnActionStaff.UseVisualStyleBackColor = true;
+            this.btnActionStaff.Click += new System.EventHandler(this.btnActionStaff_Click);
             // 
             // label14
             // 

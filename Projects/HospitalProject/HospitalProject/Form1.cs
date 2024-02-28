@@ -118,7 +118,34 @@ namespace HospitalProject
                     MessageBox.Show($"Вече използвате болницата : {txtUseHospital.Text}");
                     lblUsedDB.Text = dbName;
                     UsedHospitalName = lblUsedDB.Text;
+                txtAppointment_Patient_Full_Name.Items.Clear();
+                txtAppointment_Doctor_Full_Name.Items.Clear();
+                //Fill appointment's 2 fields with data
+                connection.Open();
+                string queryPatientFullName = $"select * from Patient Order By Patient.Patient_First_Name,Patient.Patient_Last_Name";
+                SqlCommand commandPatient = new SqlCommand(queryPatientFullName, connection);
+                SqlDataReader readerPatient = commandPatient.ExecuteReader();
+                while (readerPatient.Read())
+                {
+                   string firstName = readerPatient[1].ToString();
+                   string lastName = readerPatient[2].ToString();
+                    txtAppointment_Patient_Full_Name.Items.Add(firstName+" "+lastName);
                 }
+                readerPatient.Close();
+                string queryDoctor = $"select * from Doctor order by Doctor.Doctor_First_Name, Doctor.Doctor_Last_Name";
+                SqlCommand commandDoctor = new SqlCommand(queryDoctor, connection);
+                SqlDataReader readerDoctor = commandDoctor.ExecuteReader();
+                while (readerDoctor.Read())
+                {
+                    string firstName = readerDoctor[1].ToString();
+                    string lastName = readerDoctor[2].ToString();
+                    txtAppointment_Doctor_Full_Name.Items.Add(firstName + " " + lastName);
+                }
+                readerDoctor.Close();
+                connection.Close();
+
+
+               }
                 else
                 {
                     MessageBox.Show($"Болница с име : {txtUseHospital.Text} не е намерена");
@@ -203,6 +230,43 @@ namespace HospitalProject
                     command.ExecuteNonQuery();
                     txtDepartment_Name.Text = "";
                     MessageBox.Show("Успешно добавен отдел!");
+
+                }
+                connection.Close();
+            }
+        }
+
+        private void btnActionStaff_Click(object sender, EventArgs e)
+        {
+            if(btnRegister.Checked)
+            {
+                if (CurrentHospitalID == -1)
+                {
+                    MessageBox.Show("Моля, изберете болница!");
+                    return;
+                }
+                if (String.IsNullOrEmpty(txtStaff_Address.Text)||String.IsNullOrEmpty(txtStaff_Department_ID.Text)||String.IsNullOrEmpty(txtStaff_Last_Name.Text)||String.IsNullOrEmpty(txtStaff_Phone_Number.Text))
+                {
+                    MessageBox.Show("Моля, въведете всички данни!");
+                    return;
+                }
+                connection.Open();
+                string query = $"INSERT INTO Staff (Department_ID,Staff_First_Name,Staff_Last_Name,Staff_Address,Staff_Phone_Number) VALUES (@department_id,@first_name,@last_name,@address,@phone_num)";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@department_id",int.Parse(txtStaff_Department_ID.Text));
+                    command.Parameters.AddWithValue("@first_name", txtStaff_First_Name.Text);
+                    command.Parameters.AddWithValue("@last_name", txtStaff_Last_Name.Text);
+                    command.Parameters.AddWithValue("@address", txtStaff_Address.Text);
+                    command.Parameters.AddWithValue("@phone_num", txtStaff_Phone_Number.Text);
+                    command.ExecuteNonQuery();
+                    txtStaff_Department_ID.Text = "";
+                    txtStaff_First_Name.Text = "";
+                    txtStaff_Last_Name.Text = "";
+                    txtStaff_Address.Text = "";
+                    txtStaff_Address.Text = "";
+                    txtStaff_Phone_Number.Text = "";
+                    MessageBox.Show("Успешно добавен служител!");
 
                 }
                 connection.Close();

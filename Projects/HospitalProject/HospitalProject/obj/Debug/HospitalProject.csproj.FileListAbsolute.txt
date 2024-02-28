@@ -19,3 +19,14 @@ C:\Users\Vladimir Boychev\Desktop\C#\HospitalProject\HospitalProject\obj\Debug\H
 C:\Users\Vladimir Boychev\Desktop\C#\HospitalProject\HospitalProject\obj\Debug\HospitalProject.csproj.CoreCompileInputs.cache
 C:\Users\Vladimir Boychev\Desktop\C#\HospitalProject\HospitalProject\obj\Debug\HospitalProject.exe
 C:\Users\Vladimir Boychev\Desktop\C#\HospitalProject\HospitalProject\obj\Debug\HospitalProject.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\Projects\HospitalProject\HospitalProject\bin\Debug\HospitalProject.exe.config
+C:\Users\Vladimir Boychev\Desktop\C#\Projects\HospitalProject\HospitalProject\bin\Debug\HospitalProject.exe
+C:\Users\Vladimir Boychev\Desktop\C#\Projects\HospitalProject\HospitalProject\bin\Debug\HospitalProject.pdb
+C:\Users\Vladimir Boychev\Desktop\C#\Projects\HospitalProject\HospitalProject\obj\Debug\HospitalProject.csproj.AssemblyReference.cache
+C:\Users\Vladimir Boychev\Desktop\C#\Projects\HospitalProject\HospitalProject\obj\Debug\HospitalProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Vladimir Boychev\Desktop\C#\Projects\HospitalProject\HospitalProject\obj\Debug\HospitalProject.Form1.resources
+C:\Users\Vladimir Boychev\Desktop\C#\Projects\HospitalProject\HospitalProject\obj\Debug\HospitalProject.Properties.Resources.resources
+C:\Users\Vladimir Boychev\Desktop\C#\Projects\HospitalProject\HospitalProject\obj\Debug\HospitalProject.csproj.GenerateResource.cache
+C:\Users\Vladimir Boychev\Desktop\C#\Projects\HospitalProject\HospitalProject\obj\Debug\HospitalProject.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir Boychev\Desktop\C#\Projects\HospitalProject\HospitalProject\obj\Debug\HospitalProject.exe
+C:\Users\Vladimir Boychev\Desktop\C#\Projects\HospitalProject\HospitalProject\obj\Debug\HospitalProject.pdb
