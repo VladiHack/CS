@@ -79,7 +79,7 @@ namespace HospitalProject
             this.txtAppointment_Patient_Full_Name = new System.Windows.Forms.ComboBox();
             this.btnActionAppointment = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.AppointmentDate = new System.Windows.Forms.DateTimePicker();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -586,7 +586,7 @@ namespace HospitalProject
             this.tabPage5.Controls.Add(this.txtAppointment_Patient_Full_Name);
             this.tabPage5.Controls.Add(this.btnActionAppointment);
             this.tabPage5.Controls.Add(this.label22);
-            this.tabPage5.Controls.Add(this.dateTimePicker1);
+            this.tabPage5.Controls.Add(this.AppointmentDate);
             this.tabPage5.Controls.Add(this.label21);
             this.tabPage5.Controls.Add(this.label20);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
@@ -615,13 +615,14 @@ namespace HospitalProject
             // 
             // btnActionAppointment
             // 
-            this.btnActionAppointment.Location = new System.Drawing.Point(280, 374);
+            this.btnActionAppointment.Location = new System.Drawing.Point(224, 374);
             this.btnActionAppointment.Margin = new System.Windows.Forms.Padding(4);
             this.btnActionAppointment.Name = "btnActionAppointment";
             this.btnActionAppointment.Size = new System.Drawing.Size(131, 28);
             this.btnActionAppointment.TabIndex = 6;
             this.btnActionAppointment.Text = "Do action";
             this.btnActionAppointment.UseVisualStyleBackColor = true;
+            this.btnActionAppointment.Click += new System.EventHandler(this.btnActionAppointment_Click);
             // 
             // label22
             // 
@@ -633,13 +634,13 @@ namespace HospitalProject
             this.label22.TabIndex = 5;
             this.label22.Text = "Date";
             // 
-            // dateTimePicker1
+            // AppointmentDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(183, 192);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
-            this.dateTimePicker1.TabIndex = 4;
+            this.AppointmentDate.Location = new System.Drawing.Point(183, 192);
+            this.AppointmentDate.Margin = new System.Windows.Forms.Padding(4);
+            this.AppointmentDate.Name = "AppointmentDate";
+            this.AppointmentDate.Size = new System.Drawing.Size(265, 22);
+            this.AppointmentDate.TabIndex = 4;
             // 
             // label21
             // 
@@ -946,7 +947,7 @@ namespace HospitalProject
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button btnActionAppointment;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker AppointmentDate;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TabPage tabPage6;

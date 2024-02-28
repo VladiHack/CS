@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace HospitalProject
 {
@@ -122,7 +123,7 @@ namespace HospitalProject
                 txtAppointment_Doctor_Full_Name.Items.Clear();
                 //Fill appointment's 2 fields with data
                 connection.Open();
-                string queryPatientFullName = $"select * from Patient Order By Patient.Patient_First_Name,Patient.Patient_Last_Name";
+                string queryPatientFullName = $"select * from Patient\r\ninner join Appointment on Appointment.Patient_ID=Patient.Patient_ID\r\ninner join Department on Appointment.Doctor_ID=Department.Department_ID\r\nwhere Hospital_ID={CurrentHospitalID}\r\norder by Patient_First_Name,Patient_Last_Name ";
                 SqlCommand commandPatient = new SqlCommand(queryPatientFullName, connection);
                 SqlDataReader readerPatient = commandPatient.ExecuteReader();
                 while (readerPatient.Read())
@@ -132,7 +133,7 @@ namespace HospitalProject
                     txtAppointment_Patient_Full_Name.Items.Add(firstName+" "+lastName);
                 }
                 readerPatient.Close();
-                string queryDoctor = $"select * from Doctor order by Doctor.Doctor_First_Name, Doctor.Doctor_Last_Name";
+                string queryDoctor = $"select * from Doctor\r\ninner join Department on Doctor.Department_ID=Department.Department_ID\r\nwhere Hospital_ID={CurrentHospitalID}\r\norder by Doctor_First_Name,Doctor_Last_Name";
                 SqlCommand commandDoctor = new SqlCommand(queryDoctor, connection);
                 SqlDataReader readerDoctor = commandDoctor.ExecuteReader();
                 while (readerDoctor.Read())
@@ -272,5 +273,95 @@ namespace HospitalProject
                 connection.Close();
             }
         }
+
+        private void btnActionAppointment_Click(object sender, EventArgs e)
+        {
+            if(btnRegister.Checked)
+            {
+                if (CurrentHospitalID == -1)
+                {
+                    MessageBox.Show("Моля, изберете болница!");
+                    return;
+                }
+                if (txtAppointment_Doctor_Full_Name.Text==""||txtAppointment_Patient_Full_Name.Text==""||AppointmentDate.Checked==false)
+                {
+                    MessageBox.Show("Моля, въведете всички данни!");
+                    return;
+                }
+                //Checking if the name of the patient exists
+                bool nameIsCorrect = false;
+                for (int i = 0; i < txtAppointment_Patient_Full_Name.Items.Count; i++)
+                {
+                    if (txtAppointment_Patient_Full_Name.Text .CompareTo(txtAppointment_Patient_Full_Name.Items[i].ToString())==0)
+                    {
+                        nameIsCorrect = true;
+                        break;
+                    }
+                }
+                if(nameIsCorrect==false)
+                {
+                    MessageBox.Show("Името на пациента не отговаря на нито едно име в болницата!");
+                    return;
+                }
+                bool doctorName = false;
+                for (int i = 0; i < txtAppointment_Doctor_Full_Name.Items.Count; i++)
+                {
+                    if (txtAppointment_Doctor_Full_Name.Text.CompareTo(txtAppointment_Doctor_Full_Name.Items[i].ToString()) == 0)
+                    {
+                        doctorName = true;
+                        break;
+                    }
+                }
+                if (doctorName == false)
+                {
+                    MessageBox.Show("Името на доктора не отговаря на нито едно име в болницата!");
+                    return;
+                }
+
+                string[] patientFullName = txtAppointment_Patient_Full_Name.Text.Split().ToArray();
+                int idPatient = -1;
+                connection.Open();
+                string query = $"SELECT * FROM Patient where Patient_First_Name='{patientFullName[0]}' AND Patient_Last_Name='{patientFullName[1]}'";
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    idPatient = int.Parse(reader[0].ToString());
+                    break;
+                }
+                reader.Close();
+                connection.Close();
+                string[] doctorFullName = txtAppointment_Doctor_Full_Name.Text.Split().ToArray();
+                int idDoctor = -1;
+                connection.Open();
+                string queryDoc = $"SELECT * FROM Doctor where Doctor_First_Name='{doctorFullName[0]}' AND Doctor_Last_Name='{doctorFullName[1]}'";
+                SqlCommand commandDoc = new SqlCommand(query, connection);
+                SqlDataReader readerDoc = commandDoc.ExecuteReader();
+                while (readerDoc.Read())
+                {
+                    idDoctor = int.Parse(readerDoc[0].ToString());
+                    break;
+                }
+                readerDoc.Close();
+                connection.Close();
+
+                connection.Open();
+                string queryAdd = $"INSERT INTO Appointment (Patient_ID,Doctor_ID,Date) VALUES (@patient_id,@doctor_id,@date)";
+                using (SqlCommand commandAdd = new SqlCommand(queryAdd, connection))
+                {
+                    commandAdd.Parameters.AddWithValue("@patient_id", idPatient);
+                    commandAdd.Parameters.AddWithValue("@doctor_id", idDoctor);
+                    commandAdd.Parameters.AddWithValue("@date",DateTime.Parse(AppointmentDate.Text));
+                    commandAdd.ExecuteNonQuery();
+                    MessageBox.Show("Успешно добавено посещение!");
+                    txtAppointment_Patient_Full_Name.Text = "";
+                    txtAppointment_Doctor_Full_Name.Text = "";
+                    AppointmentDate.Text = "";
+
+                }
+                connection.Close();
+            }
+        }
+     }
     }
-}
+
