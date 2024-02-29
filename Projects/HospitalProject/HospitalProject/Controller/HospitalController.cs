@@ -25,7 +25,7 @@ namespace HospitalProject.Controller
                     command.Parameters.AddWithValue("@phoneNum", hospital.PhoneNumber);
                     command.Parameters.AddWithValue("@state",hospital.State);
                     command.ExecuteNonQuery();
-               } 
+               }
         }
         public static bool HospitalExists(Hospital hospital)
         {

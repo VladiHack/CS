@@ -288,31 +288,7 @@ namespace HospitalProject
             
         }
 
-        private void btnActionDoctor_Click(object sender, EventArgs e)
-        {
-            if(btnRegister.Checked)
-            {
-                connection.Open();
-                string query = $"INSERT INTO Doctor (Doctor_First_Name, Doctor_Last_Name,Department_ID,Doctor_Phone_Number) VALUES (@first_name,@last_name,@department_id,@doctor_phone_number)";
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@first_name", txtDoctor_First_Name.Text);
-                    command.Parameters.AddWithValue("@last_name", txt_Doctor_Last_Name.Text);
-                    command.Parameters.AddWithValue("@department_id", int.Parse(txt_Doctor_Department_ID.Text));
-                    command.Parameters.AddWithValue("@doctor_phone_number", txt_Doctor_Phone_Number.Text);
-
-                    command.ExecuteNonQuery();
-                    txtDoctor_First_Name.Text = "";
-                    txt_Doctor_Department_ID.Text = "";
-                    txt_Doctor_Phone_Number.Text = "";
-                    txt_Doctor_Last_Name.Text = "";
-                    MessageBox.Show("Успешно добавен лекар.");
-
-                }
-            }
-           
-        }
-
+   
         private void btnActionDepartment_Click(object sender, EventArgs e)
         {
             if (btnRegister.Checked)
@@ -549,6 +525,102 @@ namespace HospitalProject
                     txtHospital_Name.Text = txtHospital_Name.Items[i].ToString();
                     txtHospital_Address.Text = txtHospital_Address.Items[i].ToString();
                     txtHospital_Phone_Number.Text = txtHospital_Phone_Number.Items[i].ToString();
+                    break;
+                }
+            }
+        }
+
+        private void btnActionDoctor_Click_1(object sender, EventArgs e)
+        {
+            if(CurrentHospitalID==-1)
+            {
+                MessageBox.Show("Не сте избрали болница!");
+                return;
+            }
+            try
+            {
+                string firstName = txtDoctor_First_Name.Text;string lastName = txt_Doctor_Last_Name.Text;int departmentId = int.Parse(txt_Doctor_Department_ID.Text);
+                string phoneNum = txt_Doctor_Phone_Number.Text;
+                Doctor doctor=new Doctor(firstName,lastName,phoneNum,departmentId);
+                if (btnRegister.Checked)
+                {
+                    DoctorController.AddDoctor(doctor);
+                    txtDoctor_First_Name.Text = "";
+                    txt_Doctor_Department_ID.Text = "";
+                    txt_Doctor_Phone_Number.Text = "";
+                    txt_Doctor_Last_Name.Text = "";
+                    MessageBox.Show("Успешно добавен лекар.");
+                }
+                else if(btnRemove.Checked)
+                {
+                    if (DoctorController.DoctorExists(doctor))
+                    {
+                        //TODO Изтрий доктор
+                    }
+                    else
+                    {
+                        MessageBox.Show("Такъв доктор не съществува!");
+                    }
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
+         
+        }
+
+        private void txtDoctor_First_Name_TextChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < txtDoctor_First_Name.Items.Count; i++)
+            {
+                if (txtDoctor_First_Name.Items[i].ToString().CompareTo(txtDoctor_First_Name.Text) == 0)
+                {
+                    txt_Doctor_Last_Name.Text = txt_Doctor_Last_Name.Items[i].ToString();
+                    txt_Doctor_Phone_Number.Text = txt_Doctor_Phone_Number.Items[i].ToString();
+                    txt_Doctor_Department_ID.Text = txt_Doctor_Department_ID.Items[i].ToString();
+                    break;
+                }
+            }
+        }
+
+        private void txt_Doctor_Last_Name_TextChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < txt_Doctor_Last_Name.Items.Count; i++)
+            {
+                if (txt_Doctor_Last_Name.Items[i].ToString().CompareTo(txt_Doctor_Last_Name.Text) == 0)
+                {
+                    txtDoctor_First_Name.Text = txtDoctor_First_Name.Items[i].ToString();
+                    txt_Doctor_Phone_Number.Text = txt_Doctor_Phone_Number.Items[i].ToString();
+                    txt_Doctor_Department_ID.Text = txt_Doctor_Department_ID.Items[i].ToString();
+                    break;
+                }
+            }
+        }
+
+        private void txt_Doctor_Department_ID_TextChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < txt_Doctor_Department_ID.Items.Count; i++)
+            {
+                if (txt_Doctor_Department_ID.Items[i].ToString().CompareTo(txt_Doctor_Department_ID.Text) == 0)
+                {
+                    txtDoctor_First_Name.Text = txtDoctor_First_Name.Items[i].ToString();
+                    txt_Doctor_Phone_Number.Text = txt_Doctor_Phone_Number.Items[i].ToString();
+                    txt_Doctor_Last_Name.Text = txt_Doctor_Last_Name.Items[i].ToString();
+                    break;
+                }
+            }
+        }
+
+        private void txt_Doctor_Phone_Number_TextChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < txt_Doctor_Phone_Number.Items.Count; i++)
+            {
+                if (txt_Doctor_Phone_Number.Items[i].ToString().CompareTo(txt_Doctor_Phone_Number.Text) == 0)
+                {
+                    txtDoctor_First_Name.Text = txtDoctor_First_Name.Items[i].ToString();
+                    txt_Doctor_Department_ID.Text = txt_Doctor_Department_ID.Items[i].ToString();
+                    txt_Doctor_Last_Name.Text = txt_Doctor_Last_Name.Items[i].ToString();
                     break;
                 }
             }

@@ -160,7 +160,7 @@ namespace HospitalProject
             this.btnActionHospital.Name = "btnActionHospital";
             this.btnActionHospital.Size = new System.Drawing.Size(201, 39);
             this.btnActionHospital.TabIndex = 12;
-            this.btnActionHospital.Text = "Register";
+            this.btnActionHospital.Text = "Action";
             this.btnActionHospital.UseVisualStyleBackColor = true;
             this.btnActionHospital.Click += new System.EventHandler(this.btnActionHospital_Click);
             // 
@@ -294,6 +294,7 @@ namespace HospitalProject
             this.txtDoctor_First_Name.Name = "txtDoctor_First_Name";
             this.txtDoctor_First_Name.Size = new System.Drawing.Size(216, 24);
             this.txtDoctor_First_Name.TabIndex = 25;
+            this.txtDoctor_First_Name.TextChanged += new System.EventHandler(this.txtDoctor_First_Name_TextChanged);
             // 
             // txt_Doctor_Last_Name
             // 
@@ -302,6 +303,7 @@ namespace HospitalProject
             this.txt_Doctor_Last_Name.Name = "txt_Doctor_Last_Name";
             this.txt_Doctor_Last_Name.Size = new System.Drawing.Size(216, 24);
             this.txt_Doctor_Last_Name.TabIndex = 24;
+            this.txt_Doctor_Last_Name.TextChanged += new System.EventHandler(this.txt_Doctor_Last_Name_TextChanged);
             // 
             // txt_Doctor_Department_ID
             // 
@@ -310,6 +312,7 @@ namespace HospitalProject
             this.txt_Doctor_Department_ID.Name = "txt_Doctor_Department_ID";
             this.txt_Doctor_Department_ID.Size = new System.Drawing.Size(216, 24);
             this.txt_Doctor_Department_ID.TabIndex = 23;
+            this.txt_Doctor_Department_ID.TextChanged += new System.EventHandler(this.txt_Doctor_Department_ID_TextChanged);
             // 
             // txt_Doctor_Phone_Number
             // 
@@ -318,16 +321,18 @@ namespace HospitalProject
             this.txt_Doctor_Phone_Number.Name = "txt_Doctor_Phone_Number";
             this.txt_Doctor_Phone_Number.Size = new System.Drawing.Size(216, 24);
             this.txt_Doctor_Phone_Number.TabIndex = 22;
+            this.txt_Doctor_Phone_Number.TextChanged += new System.EventHandler(this.txt_Doctor_Phone_Number_TextChanged);
             // 
             // btnActionDoctor
             // 
-            this.btnActionDoctor.Location = new System.Drawing.Point(185, 374);
+            this.btnActionDoctor.Location = new System.Drawing.Point(187, 390);
             this.btnActionDoctor.Margin = new System.Windows.Forms.Padding(4);
             this.btnActionDoctor.Name = "btnActionDoctor";
-            this.btnActionDoctor.Size = new System.Drawing.Size(164, 28);
+            this.btnActionDoctor.Size = new System.Drawing.Size(177, 39);
             this.btnActionDoctor.TabIndex = 21;
-            this.btnActionDoctor.Text = "Register Doctor";
+            this.btnActionDoctor.Text = "Action";
             this.btnActionDoctor.UseVisualStyleBackColor = true;
+            this.btnActionDoctor.Click += new System.EventHandler(this.btnActionDoctor_Click_1);
             // 
             // label6
             // 
@@ -412,12 +417,12 @@ namespace HospitalProject
             // 
             // btnActionDepartment
             // 
-            this.btnActionDepartment.Location = new System.Drawing.Point(221, 372);
+            this.btnActionDepartment.Location = new System.Drawing.Point(191, 347);
             this.btnActionDepartment.Margin = new System.Windows.Forms.Padding(4);
             this.btnActionDepartment.Name = "btnActionDepartment";
-            this.btnActionDepartment.Size = new System.Drawing.Size(100, 28);
+            this.btnActionDepartment.Size = new System.Drawing.Size(167, 67);
             this.btnActionDepartment.TabIndex = 14;
-            this.btnActionDepartment.Text = "Register";
+            this.btnActionDepartment.Text = "Action";
             this.btnActionDepartment.UseVisualStyleBackColor = true;
             // 
             // label12
@@ -513,12 +518,12 @@ namespace HospitalProject
             // 
             // btnActionStaff
             // 
-            this.btnActionStaff.Location = new System.Drawing.Point(256, 418);
+            this.btnActionStaff.Location = new System.Drawing.Point(198, 401);
             this.btnActionStaff.Margin = new System.Windows.Forms.Padding(4);
             this.btnActionStaff.Name = "btnActionStaff";
-            this.btnActionStaff.Size = new System.Drawing.Size(100, 28);
+            this.btnActionStaff.Size = new System.Drawing.Size(125, 50);
             this.btnActionStaff.TabIndex = 25;
-            this.btnActionStaff.Text = "Register";
+            this.btnActionStaff.Text = "Action";
             this.btnActionStaff.UseVisualStyleBackColor = true;
             // 
             // label14
@@ -616,12 +621,12 @@ namespace HospitalProject
             // 
             // btnActionAppointment
             // 
-            this.btnActionAppointment.Location = new System.Drawing.Point(224, 374);
+            this.btnActionAppointment.Location = new System.Drawing.Point(199, 374);
             this.btnActionAppointment.Margin = new System.Windows.Forms.Padding(4);
             this.btnActionAppointment.Name = "btnActionAppointment";
-            this.btnActionAppointment.Size = new System.Drawing.Size(131, 28);
+            this.btnActionAppointment.Size = new System.Drawing.Size(156, 55);
             this.btnActionAppointment.TabIndex = 6;
-            this.btnActionAppointment.Text = "Do action";
+            this.btnActionAppointment.Text = "Action";
             this.btnActionAppointment.UseVisualStyleBackColor = true;
             // 
             // label22
@@ -725,10 +730,10 @@ namespace HospitalProject
             // 
             // btnActionPatient
             // 
-            this.btnActionPatient.Location = new System.Drawing.Point(211, 374);
+            this.btnActionPatient.Location = new System.Drawing.Point(200, 368);
             this.btnActionPatient.Margin = new System.Windows.Forms.Padding(4);
             this.btnActionPatient.Name = "btnActionPatient";
-            this.btnActionPatient.Size = new System.Drawing.Size(100, 28);
+            this.btnActionPatient.Size = new System.Drawing.Size(163, 61);
             this.btnActionPatient.TabIndex = 11;
             this.btnActionPatient.Text = "Action";
             this.btnActionPatient.UseVisualStyleBackColor = true;
