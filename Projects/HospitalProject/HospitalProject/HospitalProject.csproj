@@ -46,7 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Hospital.cs" />
+    <Compile Include="Controller\AppointmentController.cs" />
+    <Compile Include="Controller\DepartmentController.cs" />
+    <Compile Include="Controller\DoctorController.cs" />
+    <Compile Include="Controller\HospitalController.cs" />
+    <Compile Include="Controller\PatientController.cs" />
+    <Compile Include="Controller\StaffController.cs" />
+    <Compile Include="Model\Database.cs" />
+    <Compile Include="Model\Data\Appointment.cs" />
+    <Compile Include="Model\Data\Department.cs" />
+    <Compile Include="Model\Data\Doctor.cs" />
+    <Compile Include="Model\Data\Hospital.cs" />
+    <Compile Include="Model\Data\Patient.cs" />
+    <Compile Include="Model\Data\Person.cs" />
+    <Compile Include="Model\Data\Staff.cs" />
     <Compile Include="View\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,8 +93,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

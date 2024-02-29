@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HospitalProject.Model
+namespace HospitalProject.Controller
 {
-    internal class Patient
+    internal class DepartmentController
     {
     }
 }

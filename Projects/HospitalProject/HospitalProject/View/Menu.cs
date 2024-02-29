@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HospitalProject.Controller;
+using HospitalProject.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -242,33 +244,45 @@ namespace HospitalProject
 
         private void btnActionHospital_Click(object sender, EventArgs e)
         {
-               if(btnRegister.Checked)
-               {
-                connection.Open();
-                string query = $"INSERT INTO Hospital (Hospital_Name,Hospital_Address,Hospital_Phone_Number,State) VALUES (@name,@address,@phoneNum,@state)";
-                using (SqlCommand command = new SqlCommand(query, connection))
+            string hospitalName = txtHospital_Name.Text; string hospitalAddress = txtHospital_Address.Text;string hospitalPhoneNum = txtHospital_Phone_Number.Text;
+            string hospitalState = txtState.Text;
+            try
+            {
+                Hospital hospital = new Hospital(hospitalName,hospitalAddress,hospitalPhoneNum,hospitalState);
+                if (btnRegister.Checked)
                 {
-                    command.Parameters.AddWithValue("@name", txtHospital_Name.Text);
-                    command.Parameters.AddWithValue("@address", txtHospital_Address.Text);
-                    command.Parameters.AddWithValue("@phoneNum", txtHospital_Phone_Number.Text);
-                    command.Parameters.AddWithValue("@state", txtState.Text);
-
-                    command.ExecuteNonQuery();
+                    HospitalController.AddHospital(hospital);
                     MessageBox.Show("Успешно добавена болница.");
                     txtUseHospital.Items.Clear();
-                    connection.Close();
+                    txtHospital_Name.Text = "";txtHospital_Address.Text = "";txtHospital_Phone_Number.Text = "";txtState.Text = "";
                     FillAllData();
                 }
-              }
-            else if(btnRemove.Checked)
-            {
-                if(String.IsNullOrWhiteSpace(txtHospital_Address.Text)&&String.IsNullOrWhiteSpace(txtHospital_Name.Text)&&String.IsNullOrWhiteSpace(txtHospital_Phone_Number.Text)&&String.IsNullOrWhiteSpace(txtState.Text))
+                else if (btnRemove.Checked)
                 {
-                    MessageBox.Show("Въведете поне една стойност!");
-                    return;
+                   if(HospitalController.HospitalExists(hospital))
+                    {
+                        HospitalController.RemoveHospital(hospital);
+                        MessageBox.Show($"Болница {hospitalName} беше изтрита!");
+                        txtHospital_Name.Text = "";txtHospital_Address.Text = "";txtHospital_Phone_Number.Text = "";txtState.Text = "";
+                        if(lblUsedDB.Text==hospitalName)
+                        {
+                            lblUsedDB.Text = "В момента не използвате болница!";
+                            CurrentHospitalID = -1;
+                            UsedHospitalName = "";
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Такава болница не съществува!");
+                    }
                 }
-
             }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+                 
+            }
+              
                 
 
             
@@ -481,6 +495,62 @@ namespace HospitalProject
                     txtPatient_Phone_Number.Text = "";
                 }
                 connection.Close();
+            }
+        }
+
+        private void txtHospital_Name_TextChanged(object sender, EventArgs e)
+        {
+            for(int i=0;i<txtHospital_Name.Items.Count;i++)
+            {
+                if (txtHospital_Name.Items[i].ToString().CompareTo(txtHospital_Name.Text)==0)
+                {
+                    txtHospital_Address.Text = txtHospital_Address.Items[i].ToString();
+                    txtHospital_Phone_Number.Text = txtHospital_Phone_Number.Items[i].ToString();
+                    txtState.Text = txtState.Items[i].ToString();
+                    break;
+                }
+            }
+        }
+
+        private void txtHospital_Address_TextChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < txtHospital_Address.Items.Count; i++)
+            {
+                if (txtHospital_Address.Items[i].ToString().CompareTo(txtHospital_Address.Text) == 0)
+                {
+                    txtHospital_Name.Text = txtHospital_Name.Items[i].ToString();
+                    txtHospital_Phone_Number.Text = txtHospital_Phone_Number.Items[i].ToString();
+                    txtState.Text = txtState.Items[i].ToString();
+                    break;
+                }
+            }
+        }
+
+        private void txtHospital_Phone_Number_TextChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < txtHospital_Phone_Number.Items.Count; i++)
+            {
+                if (txtHospital_Phone_Number.Items[i].ToString().CompareTo(txtHospital_Phone_Number.Text) == 0)
+                {
+                    txtHospital_Name.Text = txtHospital_Name.Items[i].ToString();
+                    txtHospital_Address.Text = txtHospital_Address.Items[i].ToString();
+                    txtState.Text = txtState.Items[i].ToString();
+                    break;
+                }
+            }
+        }
+
+        private void txtState_TextChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < txtState.Items.Count; i++)
+            {
+                if (txtState.Items[i].ToString().CompareTo(txtState.Text) == 0)
+                {
+                    txtHospital_Name.Text = txtHospital_Name.Items[i].ToString();
+                    txtHospital_Address.Text = txtHospital_Address.Items[i].ToString();
+                    txtHospital_Phone_Number.Text = txtHospital_Phone_Number.Items[i].ToString();
+                    break;
+                }
             }
         }
     }

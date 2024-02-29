@@ -23,6 +23,10 @@ namespace HospitalProject.Model
             this.State= state;
 
         }
+        public Hospital()
+        {
+
+        }
         public int Id
         {
             get
@@ -40,7 +44,7 @@ namespace HospitalProject.Model
             {
                 if(String.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException("Въведете име за болница!");
+                    throw new ArgumentException("Въведете име за болницата!");
                 }
                 else
                 {
@@ -58,7 +62,11 @@ namespace HospitalProject.Model
             {
                if(String.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException("Въведете адрес!");
+                    throw new ArgumentException("Въведете адрес на болницата!");
+                }
+                else
+                {
+                    this.address = value;
                 }
             }
         }
@@ -81,7 +89,7 @@ namespace HospitalProject.Model
                 }
                 if(String.IsNullOrWhiteSpace(value)||!correctNum)
                 {
-                    throw new ArgumentException("Въведете валиден телефонен номер");
+                    throw new ArgumentException("Въведете валиден телефонен номер за болницата");
                 }
                 else
                 {
@@ -99,7 +107,7 @@ namespace HospitalProject.Model
             {
                 if (String.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException("Въведете име на град!");
+                    throw new ArgumentException("Въведете име на град за болницата!");
                 }
                 else
                 {

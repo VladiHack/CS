@@ -158,7 +158,7 @@ namespace HospitalProject
             this.btnActionHospital.Location = new System.Drawing.Point(181, 390);
             this.btnActionHospital.Margin = new System.Windows.Forms.Padding(4);
             this.btnActionHospital.Name = "btnActionHospital";
-            this.btnActionHospital.Size = new System.Drawing.Size(199, 28);
+            this.btnActionHospital.Size = new System.Drawing.Size(201, 39);
             this.btnActionHospital.TabIndex = 12;
             this.btnActionHospital.Text = "Register";
             this.btnActionHospital.UseVisualStyleBackColor = true;
@@ -207,39 +207,43 @@ namespace HospitalProject
             this.txtState.FormattingEnabled = true;
             this.txtState.Location = new System.Drawing.Point(304, 266);
             this.txtState.Name = "txtState";
-            this.txtState.Size = new System.Drawing.Size(121, 24);
+            this.txtState.Size = new System.Drawing.Size(209, 24);
             this.txtState.TabIndex = 18;
+            this.txtState.TextChanged += new System.EventHandler(this.txtState_TextChanged);
             // 
             // txtHospital_Phone_Number
             // 
             this.txtHospital_Phone_Number.FormattingEnabled = true;
             this.txtHospital_Phone_Number.Location = new System.Drawing.Point(304, 217);
             this.txtHospital_Phone_Number.Name = "txtHospital_Phone_Number";
-            this.txtHospital_Phone_Number.Size = new System.Drawing.Size(121, 24);
+            this.txtHospital_Phone_Number.Size = new System.Drawing.Size(209, 24);
             this.txtHospital_Phone_Number.TabIndex = 17;
+            this.txtHospital_Phone_Number.TextChanged += new System.EventHandler(this.txtHospital_Phone_Number_TextChanged);
             // 
             // txtHospital_Address
             // 
             this.txtHospital_Address.FormattingEnabled = true;
             this.txtHospital_Address.Location = new System.Drawing.Point(304, 160);
             this.txtHospital_Address.Name = "txtHospital_Address";
-            this.txtHospital_Address.Size = new System.Drawing.Size(121, 24);
+            this.txtHospital_Address.Size = new System.Drawing.Size(209, 24);
             this.txtHospital_Address.TabIndex = 16;
+            this.txtHospital_Address.TextChanged += new System.EventHandler(this.txtHospital_Address_TextChanged);
             // 
             // txtHospital_Name
             // 
             this.txtHospital_Name.FormattingEnabled = true;
             this.txtHospital_Name.Location = new System.Drawing.Point(304, 102);
             this.txtHospital_Name.Name = "txtHospital_Name";
-            this.txtHospital_Name.Size = new System.Drawing.Size(121, 24);
+            this.txtHospital_Name.Size = new System.Drawing.Size(209, 24);
             this.txtHospital_Name.TabIndex = 15;
+            this.txtHospital_Name.TextChanged += new System.EventHandler(this.txtHospital_Name_TextChanged);
             // 
             // txtHospital_ID
             // 
             this.txtHospital_ID.FormattingEnabled = true;
             this.txtHospital_ID.Location = new System.Drawing.Point(304, 44);
             this.txtHospital_ID.Name = "txtHospital_ID";
-            this.txtHospital_ID.Size = new System.Drawing.Size(121, 24);
+            this.txtHospital_ID.Size = new System.Drawing.Size(209, 24);
             this.txtHospital_ID.TabIndex = 13;
             // 
             // lblHospitalID
@@ -280,7 +284,7 @@ namespace HospitalProject
             this.txtDoctor_ID.FormattingEnabled = true;
             this.txtDoctor_ID.Location = new System.Drawing.Point(297, 51);
             this.txtDoctor_ID.Name = "txtDoctor_ID";
-            this.txtDoctor_ID.Size = new System.Drawing.Size(132, 24);
+            this.txtDoctor_ID.Size = new System.Drawing.Size(216, 24);
             this.txtDoctor_ID.TabIndex = 26;
             // 
             // txtDoctor_First_Name
@@ -288,7 +292,7 @@ namespace HospitalProject
             this.txtDoctor_First_Name.FormattingEnabled = true;
             this.txtDoctor_First_Name.Location = new System.Drawing.Point(297, 104);
             this.txtDoctor_First_Name.Name = "txtDoctor_First_Name";
-            this.txtDoctor_First_Name.Size = new System.Drawing.Size(132, 24);
+            this.txtDoctor_First_Name.Size = new System.Drawing.Size(216, 24);
             this.txtDoctor_First_Name.TabIndex = 25;
             // 
             // txt_Doctor_Last_Name
@@ -296,7 +300,7 @@ namespace HospitalProject
             this.txt_Doctor_Last_Name.FormattingEnabled = true;
             this.txt_Doctor_Last_Name.Location = new System.Drawing.Point(297, 151);
             this.txt_Doctor_Last_Name.Name = "txt_Doctor_Last_Name";
-            this.txt_Doctor_Last_Name.Size = new System.Drawing.Size(132, 24);
+            this.txt_Doctor_Last_Name.Size = new System.Drawing.Size(216, 24);
             this.txt_Doctor_Last_Name.TabIndex = 24;
             // 
             // txt_Doctor_Department_ID
@@ -304,7 +308,7 @@ namespace HospitalProject
             this.txt_Doctor_Department_ID.FormattingEnabled = true;
             this.txt_Doctor_Department_ID.Location = new System.Drawing.Point(297, 204);
             this.txt_Doctor_Department_ID.Name = "txt_Doctor_Department_ID";
-            this.txt_Doctor_Department_ID.Size = new System.Drawing.Size(132, 24);
+            this.txt_Doctor_Department_ID.Size = new System.Drawing.Size(216, 24);
             this.txt_Doctor_Department_ID.TabIndex = 23;
             // 
             // txt_Doctor_Phone_Number
@@ -312,7 +316,7 @@ namespace HospitalProject
             this.txt_Doctor_Phone_Number.FormattingEnabled = true;
             this.txt_Doctor_Phone_Number.Location = new System.Drawing.Point(297, 256);
             this.txt_Doctor_Phone_Number.Name = "txt_Doctor_Phone_Number";
-            this.txt_Doctor_Phone_Number.Size = new System.Drawing.Size(132, 24);
+            this.txt_Doctor_Phone_Number.Size = new System.Drawing.Size(216, 24);
             this.txt_Doctor_Phone_Number.TabIndex = 22;
             // 
             // btnActionDoctor
@@ -324,7 +328,6 @@ namespace HospitalProject
             this.btnActionDoctor.TabIndex = 21;
             this.btnActionDoctor.Text = "Register Doctor";
             this.btnActionDoctor.UseVisualStyleBackColor = true;
-            this.btnActionDoctor.Click += new System.EventHandler(this.btnActionDoctor_Click);
             // 
             // label6
             // 
@@ -396,7 +399,7 @@ namespace HospitalProject
             this.txtDepartment_Name.FormattingEnabled = true;
             this.txtDepartment_Name.Location = new System.Drawing.Point(259, 131);
             this.txtDepartment_Name.Name = "txtDepartment_Name";
-            this.txtDepartment_Name.Size = new System.Drawing.Size(173, 24);
+            this.txtDepartment_Name.Size = new System.Drawing.Size(244, 24);
             this.txtDepartment_Name.TabIndex = 17;
             // 
             // txtDepartment_ID
@@ -404,7 +407,7 @@ namespace HospitalProject
             this.txtDepartment_ID.FormattingEnabled = true;
             this.txtDepartment_ID.Location = new System.Drawing.Point(259, 65);
             this.txtDepartment_ID.Name = "txtDepartment_ID";
-            this.txtDepartment_ID.Size = new System.Drawing.Size(173, 24);
+            this.txtDepartment_ID.Size = new System.Drawing.Size(244, 24);
             this.txtDepartment_ID.TabIndex = 16;
             // 
             // btnActionDepartment
@@ -416,7 +419,6 @@ namespace HospitalProject
             this.btnActionDepartment.TabIndex = 14;
             this.btnActionDepartment.Text = "Register";
             this.btnActionDepartment.UseVisualStyleBackColor = true;
-            this.btnActionDepartment.Click += new System.EventHandler(this.btnActionDepartment_Click);
             // 
             // label12
             // 
@@ -466,7 +468,7 @@ namespace HospitalProject
             this.txtStaff_ID.FormattingEnabled = true;
             this.txtStaff_ID.Location = new System.Drawing.Point(302, 35);
             this.txtStaff_ID.Name = "txtStaff_ID";
-            this.txtStaff_ID.Size = new System.Drawing.Size(121, 24);
+            this.txtStaff_ID.Size = new System.Drawing.Size(200, 24);
             this.txtStaff_ID.TabIndex = 31;
             // 
             // txtStaff_Department_ID
@@ -474,7 +476,7 @@ namespace HospitalProject
             this.txtStaff_Department_ID.FormattingEnabled = true;
             this.txtStaff_Department_ID.Location = new System.Drawing.Point(302, 95);
             this.txtStaff_Department_ID.Name = "txtStaff_Department_ID";
-            this.txtStaff_Department_ID.Size = new System.Drawing.Size(121, 24);
+            this.txtStaff_Department_ID.Size = new System.Drawing.Size(200, 24);
             this.txtStaff_Department_ID.TabIndex = 30;
             // 
             // txtStaff_First_Name
@@ -482,7 +484,7 @@ namespace HospitalProject
             this.txtStaff_First_Name.FormattingEnabled = true;
             this.txtStaff_First_Name.Location = new System.Drawing.Point(302, 147);
             this.txtStaff_First_Name.Name = "txtStaff_First_Name";
-            this.txtStaff_First_Name.Size = new System.Drawing.Size(121, 24);
+            this.txtStaff_First_Name.Size = new System.Drawing.Size(200, 24);
             this.txtStaff_First_Name.TabIndex = 29;
             // 
             // txtStaff_Last_Name
@@ -490,7 +492,7 @@ namespace HospitalProject
             this.txtStaff_Last_Name.FormattingEnabled = true;
             this.txtStaff_Last_Name.Location = new System.Drawing.Point(302, 205);
             this.txtStaff_Last_Name.Name = "txtStaff_Last_Name";
-            this.txtStaff_Last_Name.Size = new System.Drawing.Size(121, 24);
+            this.txtStaff_Last_Name.Size = new System.Drawing.Size(200, 24);
             this.txtStaff_Last_Name.TabIndex = 28;
             // 
             // txtStaff_Address
@@ -498,7 +500,7 @@ namespace HospitalProject
             this.txtStaff_Address.FormattingEnabled = true;
             this.txtStaff_Address.Location = new System.Drawing.Point(302, 266);
             this.txtStaff_Address.Name = "txtStaff_Address";
-            this.txtStaff_Address.Size = new System.Drawing.Size(121, 24);
+            this.txtStaff_Address.Size = new System.Drawing.Size(200, 24);
             this.txtStaff_Address.TabIndex = 27;
             // 
             // txtStaff_Phone_Number
@@ -506,7 +508,7 @@ namespace HospitalProject
             this.txtStaff_Phone_Number.FormattingEnabled = true;
             this.txtStaff_Phone_Number.Location = new System.Drawing.Point(302, 318);
             this.txtStaff_Phone_Number.Name = "txtStaff_Phone_Number";
-            this.txtStaff_Phone_Number.Size = new System.Drawing.Size(121, 24);
+            this.txtStaff_Phone_Number.Size = new System.Drawing.Size(200, 24);
             this.txtStaff_Phone_Number.TabIndex = 26;
             // 
             // btnActionStaff
@@ -518,7 +520,6 @@ namespace HospitalProject
             this.btnActionStaff.TabIndex = 25;
             this.btnActionStaff.Text = "Register";
             this.btnActionStaff.UseVisualStyleBackColor = true;
-            this.btnActionStaff.Click += new System.EventHandler(this.btnActionStaff_Click);
             // 
             // label14
             // 
@@ -602,7 +603,7 @@ namespace HospitalProject
             this.txtAppointment_Doctor_Full_Name.FormattingEnabled = true;
             this.txtAppointment_Doctor_Full_Name.Location = new System.Drawing.Point(183, 127);
             this.txtAppointment_Doctor_Full_Name.Name = "txtAppointment_Doctor_Full_Name";
-            this.txtAppointment_Doctor_Full_Name.Size = new System.Drawing.Size(265, 24);
+            this.txtAppointment_Doctor_Full_Name.Size = new System.Drawing.Size(312, 24);
             this.txtAppointment_Doctor_Full_Name.TabIndex = 8;
             // 
             // txtAppointment_Patient_Full_Name
@@ -610,7 +611,7 @@ namespace HospitalProject
             this.txtAppointment_Patient_Full_Name.FormattingEnabled = true;
             this.txtAppointment_Patient_Full_Name.Location = new System.Drawing.Point(183, 49);
             this.txtAppointment_Patient_Full_Name.Name = "txtAppointment_Patient_Full_Name";
-            this.txtAppointment_Patient_Full_Name.Size = new System.Drawing.Size(265, 24);
+            this.txtAppointment_Patient_Full_Name.Size = new System.Drawing.Size(312, 24);
             this.txtAppointment_Patient_Full_Name.TabIndex = 7;
             // 
             // btnActionAppointment
@@ -622,7 +623,6 @@ namespace HospitalProject
             this.btnActionAppointment.TabIndex = 6;
             this.btnActionAppointment.Text = "Do action";
             this.btnActionAppointment.UseVisualStyleBackColor = true;
-            this.btnActionAppointment.Click += new System.EventHandler(this.btnActionAppointment_Click);
             // 
             // label22
             // 
@@ -688,7 +688,7 @@ namespace HospitalProject
             this.txtPatient_Phone_Number.FormattingEnabled = true;
             this.txtPatient_Phone_Number.Location = new System.Drawing.Point(211, 230);
             this.txtPatient_Phone_Number.Name = "txtPatient_Phone_Number";
-            this.txtPatient_Phone_Number.Size = new System.Drawing.Size(261, 24);
+            this.txtPatient_Phone_Number.Size = new System.Drawing.Size(289, 24);
             this.txtPatient_Phone_Number.TabIndex = 16;
             // 
             // txtPatient_Address
@@ -696,7 +696,7 @@ namespace HospitalProject
             this.txtPatient_Address.FormattingEnabled = true;
             this.txtPatient_Address.Location = new System.Drawing.Point(211, 186);
             this.txtPatient_Address.Name = "txtPatient_Address";
-            this.txtPatient_Address.Size = new System.Drawing.Size(261, 24);
+            this.txtPatient_Address.Size = new System.Drawing.Size(289, 24);
             this.txtPatient_Address.TabIndex = 15;
             // 
             // txtPatient_Last_Name
@@ -704,7 +704,7 @@ namespace HospitalProject
             this.txtPatient_Last_Name.FormattingEnabled = true;
             this.txtPatient_Last_Name.Location = new System.Drawing.Point(211, 138);
             this.txtPatient_Last_Name.Name = "txtPatient_Last_Name";
-            this.txtPatient_Last_Name.Size = new System.Drawing.Size(261, 24);
+            this.txtPatient_Last_Name.Size = new System.Drawing.Size(289, 24);
             this.txtPatient_Last_Name.TabIndex = 14;
             // 
             // txtPatient_First_Name
@@ -712,7 +712,7 @@ namespace HospitalProject
             this.txtPatient_First_Name.FormattingEnabled = true;
             this.txtPatient_First_Name.Location = new System.Drawing.Point(211, 89);
             this.txtPatient_First_Name.Name = "txtPatient_First_Name";
-            this.txtPatient_First_Name.Size = new System.Drawing.Size(261, 24);
+            this.txtPatient_First_Name.Size = new System.Drawing.Size(289, 24);
             this.txtPatient_First_Name.TabIndex = 13;
             // 
             // txtPatient_ID
@@ -720,7 +720,7 @@ namespace HospitalProject
             this.txtPatient_ID.FormattingEnabled = true;
             this.txtPatient_ID.Location = new System.Drawing.Point(211, 43);
             this.txtPatient_ID.Name = "txtPatient_ID";
-            this.txtPatient_ID.Size = new System.Drawing.Size(261, 24);
+            this.txtPatient_ID.Size = new System.Drawing.Size(289, 24);
             this.txtPatient_ID.TabIndex = 12;
             // 
             // btnActionPatient
@@ -732,7 +732,6 @@ namespace HospitalProject
             this.btnActionPatient.TabIndex = 11;
             this.btnActionPatient.Text = "Action";
             this.btnActionPatient.UseVisualStyleBackColor = true;
-            this.btnActionPatient.Click += new System.EventHandler(this.btnActionPatient_Click);
             // 
             // label27
             // 
@@ -859,7 +858,7 @@ namespace HospitalProject
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(20, 358);
+            this.label29.Location = new System.Drawing.Point(15, 387);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(212, 25);
@@ -870,7 +869,7 @@ namespace HospitalProject
             // 
             this.lblUsedDB.AutoSize = true;
             this.lblUsedDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsedDB.Location = new System.Drawing.Point(31, 401);
+            this.lblUsedDB.Location = new System.Drawing.Point(26, 430);
             this.lblUsedDB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsedDB.Name = "lblUsedDB";
             this.lblUsedDB.Size = new System.Drawing.Size(109, 39);
@@ -899,7 +898,7 @@ namespace HospitalProject
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Menu";
-            this.Text = "Hospital";
+            this.Text = "HospitalManager";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
