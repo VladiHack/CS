@@ -22,23 +22,121 @@ namespace HospitalProject
         public Form1()
         {
             InitializeComponent();
-            UpdateHospitalNames();
+            FillAllData();
         }
-        private void UpdateHospitalNames()
+        //Adding info to the hospital comboboxes
+        private void FillHospitalParams()
         {
             connection.Open();
-            string query = $"SELECT Hospital.Hospital_Name FROM Hospital";
+            string query = $"SELECT * FROM Hospital";
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader reader = command.ExecuteReader();
+            string nameHospital = ""; string hospitalAddress = ""; string hospitalPhoneNum = ""; string state = "";
+            txtHospital_Address.Items.Clear(); txtState.Items.Clear(); txtHospital_Name.Items.Clear(); txtHospital_Phone_Number.Items.Clear();txtUseHospital.Items.Clear();
             while (reader.Read())
             {
-                string nameHospital = reader[0].ToString();
+                nameHospital = reader[1].ToString();
+                hospitalAddress = reader[2].ToString();
+                hospitalPhoneNum = reader[3].ToString();
+                state = reader[4].ToString();
+                txtHospital_Name.Items.Add(nameHospital);
+                txtHospital_Address.Items.Add(hospitalAddress);
+                txtState.Items.Add(state);
+                txtHospital_Phone_Number.Items.Add(hospitalPhoneNum);
                 txtUseHospital.Items.Add(nameHospital);
             }
             reader.Close();
             connection.Close();
         }
+        //Adding info to the doctor comboboxes
+        private void FillDoctorParams()
+        {
+            connection.Open();
+            string query = "";
+            if(CurrentHospitalID==-1)
+            {
+                query = $"select * from Doctor";
+            }
+            else
+            {
+                query = $"select * from Doctor\r\ninner join Department on Doctor.Department_ID=Department.Department_ID\r\nwhere Hospital_ID={CurrentHospitalID}";
+            }
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            string firstName = ""; string lastName = ""; int departmentId = 0; string phoneNum = "";
+            txtDoctor_First_Name.Items.Clear();txt_Doctor_Last_Name.Items.Clear();txt_Doctor_Phone_Number.Items.Clear();txt_Doctor_Department_ID.Items.Clear();
+            while (reader.Read())
+            {
+                firstName = reader[1].ToString();
+                lastName = reader[2].ToString();
+                departmentId = int.Parse(reader[3].ToString());
+                phoneNum = reader[4].ToString();
+                txtDoctor_First_Name.Items.Add(firstName);
+                txt_Doctor_Last_Name.Items.Add(lastName);
+                txt_Doctor_Department_ID.Items.Add(departmentId);
+                txt_Doctor_Phone_Number.Items.Add(phoneNum);
+            }
+            reader.Close();
+            connection.Close();
+        }
+        //Adding info to the Department comboboxes
+        private void FillDepartmentParams()
+        {
+            connection.Open();
+            string query = "";
+            if (CurrentHospitalID == -1)
+            {
+                query = $"select * from Department order by Department_Name";
+            }
+            else
+            {
+                query = $"select * from Department where Hospital_ID={CurrentHospitalID} order by Department_Name";
+            }
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            string name = "";
+            txtDepartment_Name.Items.Clear();
+            while (reader.Read())
+            {
+                name = reader[2].ToString();
+                txtDepartment_Name.Items.Add(name);
+            }
+            reader.Close();
+            connection.Close();
+        }
 
+        private void FillStaffParams()
+        {
+            connection.Open();
+            string query = "";
+            if (CurrentHospitalID == -1)
+            {
+                query = $"select * from Staff order by Department_ID";
+            }
+            else
+            {
+                query = $"select * from Staff\r\ninner join Department on Department.Department_ID=Staff.Department_ID\r\nwhere Hospital_ID={CurrentHospitalID} order by Staff.Department_ID";
+            }
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            int departmentId = 0; string firstName = "";string lastName = "";string address = "";string phoneNum = "";
+            txtStaff_Department_ID.Items.Clear();txtStaff_Address.Items.Clear();txtStaff_First_Name.Items.Clear();txtStaff_Last_Name.Items.Clear();txtStaff_Phone_Number.Items.Clear();
+            while (reader.Read())
+            {
+                departmentId = int.Parse(reader[1].ToString());
+                firstName = reader[2].ToString();
+                lastName = reader[3].ToString();
+                address = reader[4].ToString();
+                phoneNum = reader[5].ToString();
+                txtStaff_Department_ID.Items.Add(departmentId);
+                txtStaff_First_Name.Items.Add(firstName);
+                txtStaff_Last_Name.Items.Add(lastName);
+                txtStaff_Address.Items.Add(address);
+                txtStaff_Phone_Number.Items.Add(phoneNum);
+            }
+            reader.Close();
+            connection.Close();
+        }
         private void btnRegister_Click(object sender, EventArgs e)
         {
             if (btnRegister.Checked==true)
@@ -48,6 +146,17 @@ namespace HospitalProject
             }
         }
 
+
+
+
+
+        private void FillAllData()
+        {
+            FillHospitalParams();
+            FillDoctorParams();
+            FillDepartmentParams();
+            FillStaffParams();
+        }
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             tabControl1.Visible = true;
@@ -79,10 +188,7 @@ namespace HospitalProject
             btnActionPatient.Text = "Select";
             btnActionStaff.Text = "Select";
         }
-        private void RemoveOrSelectHider()
-        { 
-
-        }
+     
         private void btnRemove_CheckedChanged(object sender, EventArgs e)
         {
             tabControl1.Visible = true;
@@ -93,6 +199,7 @@ namespace HospitalProject
             btnActionPatient.Text = "Remove";
             btnActionStaff.Text = "Remove";
         }
+        
 
         private void btnUseHospital_Click(object sender, EventArgs e)
         {
@@ -144,7 +251,7 @@ namespace HospitalProject
                 }
                 readerDoctor.Close();
                 connection.Close();
-
+                FillAllData();
 
                }
                 else
@@ -173,9 +280,18 @@ namespace HospitalProject
                     MessageBox.Show("Успешно добавена болница.");
                     txtUseHospital.Items.Clear();
                     connection.Close();
-                    UpdateHospitalNames();
+                    FillAllData();
                 }
               }
+            else if(btnRemove.Checked)
+            {
+                if(String.IsNullOrWhiteSpace(txtHospital_Address.Text)&&String.IsNullOrWhiteSpace(txtHospital_Name.Text)&&String.IsNullOrWhiteSpace(txtHospital_Phone_Number.Text)&&String.IsNullOrWhiteSpace(txtState.Text))
+                {
+                    MessageBox.Show("Въведете поне една стойност!");
+                    return;
+                }
+
+            }
                 
 
             
@@ -362,6 +478,34 @@ namespace HospitalProject
                 connection.Close();
             }
         }
-     }
+
+        private void btnActionPatient_Click(object sender, EventArgs e)
+        {
+            if(btnRegister.Checked)
+            {
+                if (String.IsNullOrWhiteSpace(txtPatient_First_Name.Text) || String.IsNullOrWhiteSpace(txtPatient_Last_Name.Text) || String.IsNullOrWhiteSpace(txtPatient_Address.Text) || String.IsNullOrWhiteSpace(txtPatient_Phone_Number.Text))
+                {
+                    MessageBox.Show("Моля, въведете всички данни!");
+                    return;
+                }
+                connection.Open();
+                string queryAdd = $"INSERT INTO Patient (Patient_First_Name,Patient_Last_Name,Patient_Address,Patient_Phone_Number) VALUES (@first_name,@last_name,@address,@phone_num)";
+                using (SqlCommand command = new SqlCommand(queryAdd, connection))
+                {
+                    command.Parameters.AddWithValue("@first_name", txtPatient_First_Name.Text);
+                    command.Parameters.AddWithValue("@last_name", txtPatient_Last_Name.Text);
+                    command.Parameters.AddWithValue("@address", txtPatient_Address.Text);
+                    command.Parameters.AddWithValue("@phone_num", txtPatient_Phone_Number.Text);
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Успешно добавен пациент!");
+                    txtPatient_First_Name.Text = "";
+                    txtPatient_Last_Name.Text = "";
+                    txtPatient_Address.Text = "";
+                    txtPatient_Phone_Number.Text = "";
+                }
+                connection.Close();
+            }
+        }
+    }
     }
 

@@ -83,7 +83,7 @@ namespace HospitalProject
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.Patient_Phone_Number = new System.Windows.Forms.ComboBox();
+            this.txtPatient_Phone_Number = new System.Windows.Forms.ComboBox();
             this.txtPatient_Address = new System.Windows.Forms.ComboBox();
             this.txtPatient_Last_Name = new System.Windows.Forms.ComboBox();
             this.txtPatient_First_Name = new System.Windows.Forms.ComboBox();
@@ -155,7 +155,7 @@ namespace HospitalProject
             // 
             // btnActionHospital
             // 
-            this.btnActionHospital.Location = new System.Drawing.Point(165, 391);
+            this.btnActionHospital.Location = new System.Drawing.Point(181, 390);
             this.btnActionHospital.Margin = new System.Windows.Forms.Padding(4);
             this.btnActionHospital.Name = "btnActionHospital";
             this.btnActionHospital.Size = new System.Drawing.Size(199, 28);
@@ -511,7 +511,7 @@ namespace HospitalProject
             // 
             // btnActionStaff
             // 
-            this.btnActionStaff.Location = new System.Drawing.Point(352, 406);
+            this.btnActionStaff.Location = new System.Drawing.Point(256, 418);
             this.btnActionStaff.Margin = new System.Windows.Forms.Padding(4);
             this.btnActionStaff.Name = "btnActionStaff";
             this.btnActionStaff.Size = new System.Drawing.Size(100, 28);
@@ -664,7 +664,7 @@ namespace HospitalProject
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.Patient_Phone_Number);
+            this.tabPage6.Controls.Add(this.txtPatient_Phone_Number);
             this.tabPage6.Controls.Add(this.txtPatient_Address);
             this.tabPage6.Controls.Add(this.txtPatient_Last_Name);
             this.tabPage6.Controls.Add(this.txtPatient_First_Name);
@@ -683,13 +683,13 @@ namespace HospitalProject
             this.tabPage6.Text = "Patient";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // Patient_Phone_Number
+            // txtPatient_Phone_Number
             // 
-            this.Patient_Phone_Number.FormattingEnabled = true;
-            this.Patient_Phone_Number.Location = new System.Drawing.Point(211, 230);
-            this.Patient_Phone_Number.Name = "Patient_Phone_Number";
-            this.Patient_Phone_Number.Size = new System.Drawing.Size(261, 24);
-            this.Patient_Phone_Number.TabIndex = 16;
+            this.txtPatient_Phone_Number.FormattingEnabled = true;
+            this.txtPatient_Phone_Number.Location = new System.Drawing.Point(211, 230);
+            this.txtPatient_Phone_Number.Name = "txtPatient_Phone_Number";
+            this.txtPatient_Phone_Number.Size = new System.Drawing.Size(261, 24);
+            this.txtPatient_Phone_Number.TabIndex = 16;
             // 
             // txtPatient_Address
             // 
@@ -725,13 +725,14 @@ namespace HospitalProject
             // 
             // btnActionPatient
             // 
-            this.btnActionPatient.Location = new System.Drawing.Point(229, 372);
+            this.btnActionPatient.Location = new System.Drawing.Point(211, 374);
             this.btnActionPatient.Margin = new System.Windows.Forms.Padding(4);
             this.btnActionPatient.Name = "btnActionPatient";
             this.btnActionPatient.Size = new System.Drawing.Size(100, 28);
             this.btnActionPatient.TabIndex = 11;
-            this.btnActionPatient.Text = "button1";
+            this.btnActionPatient.Text = "Action";
             this.btnActionPatient.UseVisualStyleBackColor = true;
+            this.btnActionPatient.Click += new System.EventHandler(this.btnActionPatient_Click);
             // 
             // label27
             // 
@@ -987,7 +988,7 @@ namespace HospitalProject
         private System.Windows.Forms.ComboBox txtStaff_Phone_Number;
         private System.Windows.Forms.ComboBox txtAppointment_Doctor_Full_Name;
         private System.Windows.Forms.ComboBox txtAppointment_Patient_Full_Name;
-        private System.Windows.Forms.ComboBox Patient_Phone_Number;
+        private System.Windows.Forms.ComboBox txtPatient_Phone_Number;
         private System.Windows.Forms.ComboBox txtPatient_Address;
         private System.Windows.Forms.ComboBox txtPatient_Last_Name;
         private System.Windows.Forms.ComboBox txtPatient_First_Name;
