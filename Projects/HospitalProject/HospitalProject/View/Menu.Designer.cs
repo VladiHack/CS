@@ -1,7 +1,7 @@
 ﻿
 namespace HospitalProject
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -885,7 +885,7 @@ namespace HospitalProject
             this.txtUseHospital.Size = new System.Drawing.Size(362, 24);
             this.txtUseHospital.TabIndex = 24;
             // 
-            // Form1
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -898,7 +898,7 @@ namespace HospitalProject
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "Menu";
             this.Text = "Hospital";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

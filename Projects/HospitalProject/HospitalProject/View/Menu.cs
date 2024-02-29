@@ -13,13 +13,13 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace HospitalProject
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
         static int CurrentHospitalID = -1;
         static string UsedHospitalName = "";
         static string connectionString = @"Server = .\SQLEXPRESS; DATABASE = HospitalDB;Integrated Security = True";
         static SqlConnection connection = new SqlConnection(connectionString);
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
             FillAllData();
@@ -32,7 +32,7 @@ namespace HospitalProject
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader reader = command.ExecuteReader();
             string nameHospital = ""; string hospitalAddress = ""; string hospitalPhoneNum = ""; string state = "";
-            txtHospital_Address.Items.Clear(); txtState.Items.Clear(); txtHospital_Name.Items.Clear(); txtHospital_Phone_Number.Items.Clear();txtUseHospital.Items.Clear();
+            txtHospital_Address.Items.Clear(); txtState.Items.Clear(); txtHospital_Name.Items.Clear(); txtHospital_Phone_Number.Items.Clear(); txtUseHospital.Items.Clear();
             while (reader.Read())
             {
                 nameHospital = reader[1].ToString();
@@ -228,29 +228,6 @@ namespace HospitalProject
                     UsedHospitalName = lblUsedDB.Text;
                 txtAppointment_Patient_Full_Name.Items.Clear();
                 txtAppointment_Doctor_Full_Name.Items.Clear();
-                //Fill appointment's 2 fields with data
-                connection.Open();
-                string queryPatientFullName = $"select * from Patient\r\ninner join Appointment on Appointment.Patient_ID=Patient.Patient_ID\r\ninner join Department on Appointment.Doctor_ID=Department.Department_ID\r\nwhere Hospital_ID={CurrentHospitalID}\r\norder by Patient_First_Name,Patient_Last_Name ";
-                SqlCommand commandPatient = new SqlCommand(queryPatientFullName, connection);
-                SqlDataReader readerPatient = commandPatient.ExecuteReader();
-                while (readerPatient.Read())
-                {
-                   string firstName = readerPatient[1].ToString();
-                   string lastName = readerPatient[2].ToString();
-                    txtAppointment_Patient_Full_Name.Items.Add(firstName+" "+lastName);
-                }
-                readerPatient.Close();
-                string queryDoctor = $"select * from Doctor\r\ninner join Department on Doctor.Department_ID=Department.Department_ID\r\nwhere Hospital_ID={CurrentHospitalID}\r\norder by Doctor_First_Name,Doctor_Last_Name";
-                SqlCommand commandDoctor = new SqlCommand(queryDoctor, connection);
-                SqlDataReader readerDoctor = commandDoctor.ExecuteReader();
-                while (readerDoctor.Read())
-                {
-                    string firstName = readerDoctor[1].ToString();
-                    string lastName = readerDoctor[2].ToString();
-                    txtAppointment_Doctor_Full_Name.Items.Add(firstName + " " + lastName);
-                }
-                readerDoctor.Close();
-                connection.Close();
                 FillAllData();
 
                }
