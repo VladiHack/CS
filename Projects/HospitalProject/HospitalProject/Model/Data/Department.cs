@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HospitalProject.Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,13 +40,14 @@ namespace HospitalProject.Model
             }
             set
             {
-                if(value<1)
+                //CHECK IF THERE IS A HOSPITAL WITH SUCH ID
+                if(HospitalController.ContainsId(value))
                 {
-                    throw new ArgumentException("Въведете правилен номер на болница!");
+                  this.hospitalId = value;
                 }
                 else
                 {
-                    this.hospitalId = value;
+                    throw new ArgumentException("Няма болница с такъв номер!");
                 }
             }
         }

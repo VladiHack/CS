@@ -1,5 +1,6 @@
 ﻿using HospitalProject.Controller;
 using HospitalProject.Model;
+using HospitalProject.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,66 +24,64 @@ namespace HospitalProject
         static string UsedHospitalName = "";
         static string connectionString = @"Server = .\SQLEXPRESS; DATABASE = HospitalDB;Integrated Security = True";
         static SqlConnection connection = new SqlConnection(connectionString);
+        static string action = "";
+        private System.Windows.Forms.Button currentButton;
+        private Random random;
+        private int tempIndex;
+        string usedTable = "Hospital";
         public Menu()
         {
             InitializeComponent();
-            FillAllData();
+            dataView.DataSource = HospitalController.ReturnAllHospitals();
+            random = new Random();
+        }
+       private Color SelectThemeColor()
+        {
+            int index = random.Next(ThemeColor.ColorList.Count);
+            while(tempIndex==index)
+            {
+                index=random.Next(ThemeColor.ColorList.Count);
+            }
+            tempIndex = index;
+            string color = ThemeColor.ColorList[index];
+            return ColorTranslator.FromHtml(color);
+        }
+
+        private void ActivateButton(object btnSender)
+        {
+            if (btnSender != null)
+            {
+                if (currentButton != (System.Windows.Forms.Button)btnSender)
+                {
+                    DisableButton();
+                    Color color = SelectThemeColor();
+                    currentButton = (System.Windows.Forms.Button)btnSender;
+                    currentButton.BackColor = color;
+                    currentButton.ForeColor = Color.White;
+                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    panelTitleBar.BackColor = color;
+                    panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color,-0.3);
+                    dataView.ColumnHeadersDefaultCellStyle.BackColor = color;
+                }
+            }
+        }
+        private void DisableButton()
+        {
+            foreach(Control previousBtn in panelMenu.Controls)
+            {
+                if(previousBtn.GetType()==typeof(System.Windows.Forms.Button))
+                {
+                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
+                    previousBtn.ForeColor = Color.Gainsboro;
+                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+                }
+            }
         }
         //Adding info to the hospital comboboxes
-        private void FillHospitalParams()
-        {
-            connection.Open();
-            string query = $"SELECT * FROM Hospital";
-            SqlCommand command = new SqlCommand(query, connection);
-            SqlDataReader reader = command.ExecuteReader();
-            string nameHospital = ""; string hospitalAddress = ""; string hospitalPhoneNum = ""; string state = "";
-            txtHospital_Address.Items.Clear(); txtState.Items.Clear(); txtHospital_Name.Items.Clear(); txtHospital_Phone_Number.Items.Clear(); txtUseHospital.Items.Clear();
-            while (reader.Read())
-            {
-                nameHospital = reader[1].ToString();
-                hospitalAddress = reader[2].ToString();
-                hospitalPhoneNum = reader[3].ToString();
-                state = reader[4].ToString();
-                txtHospital_Name.Items.Add(nameHospital);
-                txtHospital_Address.Items.Add(hospitalAddress);
-                txtState.Items.Add(state);
-                txtHospital_Phone_Number.Items.Add(hospitalPhoneNum);
-                txtUseHospital.Items.Add(nameHospital);
-            }
-            reader.Close();
-            connection.Close();
-        }
+        
         //Adding info to the doctor comboboxes
-        private void FillDoctorParams()
-        {
-            connection.Open();
-            string query = "";
-            if(CurrentHospitalID==-1)
-            {
-                query = $"select * from Doctor";
-            }
-            else
-            {
-                query = $"select * from Doctor\r\ninner join Department on Doctor.Department_ID=Department.Department_ID\r\nwhere Hospital_ID={CurrentHospitalID}";
-            }
-            SqlCommand command = new SqlCommand(query, connection);
-            SqlDataReader reader = command.ExecuteReader();
-            string firstName = ""; string lastName = ""; int departmentId = 0; string phoneNum = "";
-            txtDoctor_First_Name.Items.Clear();txt_Doctor_Last_Name.Items.Clear();txt_Doctor_Phone_Number.Items.Clear();txt_Doctor_Department_ID.Items.Clear();
-            while (reader.Read())
-            {
-                firstName = reader[1].ToString();
-                lastName = reader[2].ToString();
-                departmentId = int.Parse(reader[3].ToString());
-                phoneNum = reader[4].ToString();
-                txtDoctor_First_Name.Items.Add(firstName);
-                txt_Doctor_Last_Name.Items.Add(lastName);
-                txt_Doctor_Department_ID.Items.Add(departmentId);
-                txt_Doctor_Phone_Number.Items.Add(phoneNum);
-            }
-            reader.Close();
-            connection.Close();
-        }
+    
         //Adding info to the Department comboboxes
         private void FillDepartmentParams()
         {
@@ -97,531 +98,553 @@ namespace HospitalProject
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader reader = command.ExecuteReader();
             string name = "";
-            txtDepartment_Name.Items.Clear();
             while (reader.Read())
             {
                 name = reader[2].ToString();
-                txtDepartment_Name.Items.Add(name);
-            }
-            reader.Close();
-            connection.Close();
-        }
-
-        private void FillStaffParams()
-        {
-            connection.Open();
-            string query = "";
-            if (CurrentHospitalID == -1)
-            {
-                query = $"select * from Staff order by Department_ID";
-            }
-            else
-            {
-                query = $"select * from Staff\r\ninner join Department on Department.Department_ID=Staff.Department_ID\r\nwhere Hospital_ID={CurrentHospitalID} order by Staff.Department_ID";
-            }
-            SqlCommand command = new SqlCommand(query, connection);
-            SqlDataReader reader = command.ExecuteReader();
-            int departmentId = 0; string firstName = "";string lastName = "";string address = "";string phoneNum = "";
-            txtStaff_Department_ID.Items.Clear();txtStaff_Address.Items.Clear();txtStaff_First_Name.Items.Clear();txtStaff_Last_Name.Items.Clear();txtStaff_Phone_Number.Items.Clear();
-            while (reader.Read())
-            {
-                departmentId = int.Parse(reader[1].ToString());
-                firstName = reader[2].ToString();
-                lastName = reader[3].ToString();
-                address = reader[4].ToString();
-                phoneNum = reader[5].ToString();
-                txtStaff_Department_ID.Items.Add(departmentId);
-                txtStaff_First_Name.Items.Add(firstName);
-                txtStaff_Last_Name.Items.Add(lastName);
-                txtStaff_Address.Items.Add(address);
-                txtStaff_Phone_Number.Items.Add(phoneNum);
             }
             reader.Close();
             connection.Close();
         }
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if (btnRegister.Checked==true)
+            if (action == "Register")
             {
-                btnActionHospital.Visible = true;
 
             }
         }
 
+       
+
+       
 
 
+  
 
+  
 
-        private void FillAllData()
+        private void btnHospital_Click(object sender, EventArgs e)
         {
-            FillHospitalParams();
-            FillDoctorParams();
-            FillDepartmentParams();
-            FillStaffParams();
-        }
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            tabControl1.Visible = true;
-            btnActionHospital.Text = "Register";
-            btnActionAppointment.Text = "Register";
-            btnActionDepartment.Text = "Register";
-            btnActionDoctor.Text = "Register";
-            btnActionPatient.Text = "Register";
-            btnActionStaff.Text = "Register";
-            lblDepartmentID.Visible = false;
-            lblDoctorID.Visible=false;
-            lblHospitalID.Visible = false;
-            lblIDPatient.Visible = false;
-            lblStaffID.Visible = false;
-            txtHospital_ID.Visible = false;
-            txtDoctor_ID.Visible = false;
-            txtPatient_ID.Visible = false;
-            txtStaff_ID.Visible = false;
-            txtDepartment_ID.Visible = false;
+            ActivateButton(sender);
+            usedTable = "Hospital";
+            txtSearch.Clear();
+            lblSearch.Text = "Search hospital:";
+            dataView.DataSource = HospitalController.ReturnAllHospitals();
         }
 
-        private void btnSelect_CheckedChanged(object sender, EventArgs e)
-        {
-            tabControl1.Visible = true;
-            btnActionHospital.Text = "Select";
-            btnActionAppointment.Text = "Select";
-            btnActionDepartment.Text = "Select";
-            btnActionDoctor.Text = "Select";
-            btnActionPatient.Text = "Select";
-            btnActionStaff.Text = "Select";
-        }
-     
-        private void btnRemove_CheckedChanged(object sender, EventArgs e)
-        {
-            tabControl1.Visible = true;
-            btnActionHospital.Text = "Remove";
-            btnActionAppointment.Text = "Remove";
-            btnActionDepartment.Text = "Remove";
-            btnActionDoctor.Text = "Remove";
-            btnActionPatient.Text = "Remove";
-            btnActionStaff.Text = "Remove";
-        }
-        
 
-        private void btnUseHospital_Click(object sender, EventArgs e)
+
+       
+
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            string dbName = txtUseHospital.Text;
-            bool foundHospital = false;
-            connection.Open();
-                string query = $"SELECT * FROM Hospital";
-                SqlCommand command = new SqlCommand(query, connection);
-                SqlDataReader reader = command.ExecuteReader();
-                while(reader.Read())
+            Application.Exit();
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            if(WindowState==FormWindowState.Normal)
+            {
+                this.WindowState=FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnDoctor_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            usedTable = "Doctor";
+            lblSearch.Text = "Search doctor:";
+            txtSearch.Clear();
+            dataView.DataSource = DoctorController.ReturnAllDoctors();
+
+        }
+
+        private void btnDepartment_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            usedTable = "Department";
+            txtSearch.Clear();
+            lblSearch.Text = "Search department:";
+            dataView.DataSource=DepartmentController.ReturnAllDepartments();
+
+
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            usedTable = "Staff";
+            txtSearch.Clear();
+            lblSearch.Text = "Search staff:";
+            dataView.DataSource = StaffController.ReturnAllStaff();
+
+        }
+
+        private void btnAppointment_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            usedTable = "Appointment";
+            txtSearch.Clear();
+            lblSearch.Text = "Search appointment:";
+            dataView.DataSource = AppointmentController.ReturnAllAppointments();
+
+        }
+
+        private void btnPatient_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            usedTable = "Patient";
+            txtSearch.Clear();
+            lblSearch.Text = "Search patient:";
+            dataView.DataSource=PatientController.ReturnAllPatients();
+
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if(usedTable=="Hospital")
+            {
+                if(String.IsNullOrWhiteSpace(txtSearch.Text))
                 {
-                    string nameHospital = reader[1].ToString();
-                    if(nameHospital==dbName)
-                    {
-                        foundHospital = true;
-                        CurrentHospitalID = int.Parse(reader[0].ToString());
-                        break;
-                    }
+                   dataView.DataSource=HospitalController.ReturnAllHospitals();
                 }
-                reader.Close();
-              connection.Close();
-                if(foundHospital)
-                {
-                    MessageBox.Show($"Вече използвате болницата : {txtUseHospital.Text}");
-                    lblUsedDB.Text = dbName;
-                    UsedHospitalName = lblUsedDB.Text;
-                txtAppointment_Patient_Full_Name.Items.Clear();
-                txtAppointment_Doctor_Full_Name.Items.Clear();
-                FillAllData();
-
-               }
                 else
                 {
-                    MessageBox.Show($"Болница с име : {txtUseHospital.Text} не е намерена");
-                }
-                txtUseHospital.Text = "";
-
-            
-        }
-
-        private void btnActionHospital_Click(object sender, EventArgs e)
-        {
-            string hospitalName = txtHospital_Name.Text; string hospitalAddress = txtHospital_Address.Text;string hospitalPhoneNum = txtHospital_Phone_Number.Text;
-            string hospitalState = txtState.Text;
-            try
-            {
-                Hospital hospital = new Hospital(hospitalName,hospitalAddress,hospitalPhoneNum,hospitalState);
-                if (btnRegister.Checked)
-                {
-                    HospitalController.AddHospital(hospital);
-                    MessageBox.Show("Успешно добавена болница.");
-                    txtUseHospital.Items.Clear();
-                    txtHospital_Name.Text = "";txtHospital_Address.Text = "";txtHospital_Phone_Number.Text = "";txtState.Text = "";
-                    FillAllData();
-                }
-                else if (btnRemove.Checked)
-                {
-                   if(HospitalController.HospitalExists(hospital))
+                    bool isNum = true;
+                    for(int i=0;i<txtSearch.Text.Length;i++)
                     {
-                        HospitalController.RemoveHospital(hospital);
-                        MessageBox.Show($"Болница {hospitalName} беше изтрита!");
-                        txtHospital_Name.Text = "";txtHospital_Address.Text = "";txtHospital_Phone_Number.Text = "";txtState.Text = "";
-                        if(lblUsedDB.Text==hospitalName)
+                        if (txtSearch.Text[i] >= 'a' && txtSearch.Text[i] <= 'z' || (txtSearch.Text[i] >= 'A' && txtSearch.Text[i] <= 'Z')) 
                         {
-                            lblUsedDB.Text = "В момента не използвате болница!";
-                            CurrentHospitalID = -1;
-                            UsedHospitalName = "";
+                            isNum = false;break;
                         }
                     }
-                    else
+                    if(isNum)
                     {
-                        MessageBox.Show("Такава болница не съществува!");
-                    }
-                }
-            }
-            catch (Exception exception)
-            {
-                MessageBox.Show(exception.Message);
-                 
-            }
-              
-                
-
-            
-        }
-
-   
-        private void btnActionDepartment_Click(object sender, EventArgs e)
-        {
-            if (btnRegister.Checked)
-            {
-                if(CurrentHospitalID==-1)
-                {
-                    MessageBox.Show("Моля, изберете болница!");
-                    return;
-                }
-                if(String.IsNullOrWhiteSpace(txtDepartment_Name.Text))
-                {
-                    MessageBox.Show("Моля, въведете име на отдел!");
-                    return;
-                }
-                connection.Open();
-                string query = $"INSERT INTO Department (Hospital_ID,Department_Name) VALUES (@hospital_id,@department_name)";
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@hospital_id", CurrentHospitalID);
-                    command.Parameters.AddWithValue("@department_name", txtDepartment_Name.Text);
-
-
-                    command.ExecuteNonQuery();
-                    txtDepartment_Name.Text = "";
-                    MessageBox.Show("Успешно добавен отдел!");
-
-                }
-                connection.Close();
-            }
-        }
-
-        private void btnActionStaff_Click(object sender, EventArgs e)
-        {
-            if(btnRegister.Checked)
-            {
-                if (CurrentHospitalID == -1)
-                {
-                    MessageBox.Show("Моля, изберете болница!");
-                    return;
-                }
-                if (String.IsNullOrEmpty(txtStaff_Address.Text)||String.IsNullOrEmpty(txtStaff_Department_ID.Text)||String.IsNullOrEmpty(txtStaff_Last_Name.Text)||String.IsNullOrEmpty(txtStaff_Phone_Number.Text))
-                {
-                    MessageBox.Show("Моля, въведете всички данни!");
-                    return;
-                }
-                connection.Open();
-                string query = $"INSERT INTO Staff (Department_ID,Staff_First_Name,Staff_Last_Name,Staff_Address,Staff_Phone_Number) VALUES (@department_id,@first_name,@last_name,@address,@phone_num)";
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@department_id",int.Parse(txtStaff_Department_ID.Text));
-                    command.Parameters.AddWithValue("@first_name", txtStaff_First_Name.Text);
-                    command.Parameters.AddWithValue("@last_name", txtStaff_Last_Name.Text);
-                    command.Parameters.AddWithValue("@address", txtStaff_Address.Text);
-                    command.Parameters.AddWithValue("@phone_num", txtStaff_Phone_Number.Text);
-                    command.ExecuteNonQuery();
-                    txtStaff_Department_ID.Text = "";
-                    txtStaff_First_Name.Text = "";
-                    txtStaff_Last_Name.Text = "";
-                    txtStaff_Address.Text = "";
-                    txtStaff_Address.Text = "";
-                    txtStaff_Phone_Number.Text = "";
-                    MessageBox.Show("Успешно добавен служител!");
-
-                }
-                connection.Close();
-            }
-        }
-
-        private void btnActionAppointment_Click(object sender, EventArgs e)
-        {
-            if(btnRegister.Checked)
-            {
-                if (CurrentHospitalID == -1)
-                {
-                    MessageBox.Show("Моля, изберете болница!");
-                    return;
-                }
-                if (txtAppointment_Doctor_Full_Name.Text==""||txtAppointment_Patient_Full_Name.Text==""||AppointmentDate.Checked==false)
-                {
-                    MessageBox.Show("Моля, въведете всички данни!");
-                    return;
-                }
-                //Checking if the name of the patient exists
-                bool nameIsCorrect = false;
-                for (int i = 0; i < txtAppointment_Patient_Full_Name.Items.Count; i++)
-                {
-                    if (txtAppointment_Patient_Full_Name.Text .CompareTo(txtAppointment_Patient_Full_Name.Items[i].ToString())==0)
-                    {
-                        nameIsCorrect = true;
-                        break;
-                    }
-                }
-                if(nameIsCorrect==false)
-                {
-                    MessageBox.Show("Името на пациента не отговаря на нито едно име в болницата!");
-                    return;
-                }
-                bool doctorName = false;
-                for (int i = 0; i < txtAppointment_Doctor_Full_Name.Items.Count; i++)
-                {
-                    if (txtAppointment_Doctor_Full_Name.Text.CompareTo(txtAppointment_Doctor_Full_Name.Items[i].ToString()) == 0)
-                    {
-                        doctorName = true;
-                        break;
-                    }
-                }
-                if (doctorName == false)
-                {
-                    MessageBox.Show("Името на доктора не отговаря на нито едно име в болницата!");
-                    return;
-                }
-
-                string[] patientFullName = txtAppointment_Patient_Full_Name.Text.Split().ToArray();
-                int idPatient = -1;
-                connection.Open();
-                string query = $"SELECT * FROM Patient where Patient_First_Name='{patientFullName[0]}' AND Patient_Last_Name='{patientFullName[1]}'";
-                SqlCommand command = new SqlCommand(query, connection);
-                SqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    idPatient = int.Parse(reader[0].ToString());
-                    break;
-                }
-                reader.Close();
-                connection.Close();
-                string[] doctorFullName = txtAppointment_Doctor_Full_Name.Text.Split().ToArray();
-                int idDoctor = -1;
-                connection.Open();
-                string queryDoc = $"SELECT * FROM Doctor where Doctor_First_Name='{doctorFullName[0]}' AND Doctor_Last_Name='{doctorFullName[1]}'";
-                SqlCommand commandDoc = new SqlCommand(query, connection);
-                SqlDataReader readerDoc = commandDoc.ExecuteReader();
-                while (readerDoc.Read())
-                {
-                    idDoctor = int.Parse(readerDoc[0].ToString());
-                    break;
-                }
-                readerDoc.Close();
-                connection.Close();
-
-                connection.Open();
-                string queryAdd = $"INSERT INTO Appointment (Patient_ID,Doctor_ID,Date) VALUES (@patient_id,@doctor_id,@date)";
-                using (SqlCommand commandAdd = new SqlCommand(queryAdd, connection))
-                {
-                    commandAdd.Parameters.AddWithValue("@patient_id", idPatient);
-                    commandAdd.Parameters.AddWithValue("@doctor_id", idDoctor);
-                    commandAdd.Parameters.AddWithValue("@date",DateTime.Parse(AppointmentDate.Text));
-                    commandAdd.ExecuteNonQuery();
-                    MessageBox.Show("Успешно добавено посещение!");
-                    txtAppointment_Patient_Full_Name.Text = "";
-                    txtAppointment_Doctor_Full_Name.Text = "";
-                    AppointmentDate.Text = "";
-
-                }
-                connection.Close();
-            }
-        }
-
-        private void btnActionPatient_Click(object sender, EventArgs e)
-        {
-            if(btnRegister.Checked)
-            {
-                if (String.IsNullOrWhiteSpace(txtPatient_First_Name.Text) || String.IsNullOrWhiteSpace(txtPatient_Last_Name.Text) || String.IsNullOrWhiteSpace(txtPatient_Address.Text) || String.IsNullOrWhiteSpace(txtPatient_Phone_Number.Text))
-                {
-                    MessageBox.Show("Моля, въведете всички данни!");
-                    return;
-                }
-                connection.Open();
-                string queryAdd = $"INSERT INTO Patient (Patient_First_Name,Patient_Last_Name,Patient_Address,Patient_Phone_Number) VALUES (@first_name,@last_name,@address,@phone_num)";
-                using (SqlCommand command = new SqlCommand(queryAdd, connection))
-                {
-                    command.Parameters.AddWithValue("@first_name", txtPatient_First_Name.Text);
-                    command.Parameters.AddWithValue("@last_name", txtPatient_Last_Name.Text);
-                    command.Parameters.AddWithValue("@address", txtPatient_Address.Text);
-                    command.Parameters.AddWithValue("@phone_num", txtPatient_Phone_Number.Text);
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Успешно добавен пациент!");
-                    txtPatient_First_Name.Text = "";
-                    txtPatient_Last_Name.Text = "";
-                    txtPatient_Address.Text = "";
-                    txtPatient_Phone_Number.Text = "";
-                }
-                connection.Close();
-            }
-        }
-
-        private void txtHospital_Name_TextChanged(object sender, EventArgs e)
-        {
-            for(int i=0;i<txtHospital_Name.Items.Count;i++)
-            {
-                if (txtHospital_Name.Items[i].ToString().CompareTo(txtHospital_Name.Text)==0)
-                {
-                    txtHospital_Address.Text = txtHospital_Address.Items[i].ToString();
-                    txtHospital_Phone_Number.Text = txtHospital_Phone_Number.Items[i].ToString();
-                    txtState.Text = txtState.Items[i].ToString();
-                    break;
-                }
-            }
-        }
-
-        private void txtHospital_Address_TextChanged(object sender, EventArgs e)
-        {
-            for (int i = 0; i < txtHospital_Address.Items.Count; i++)
-            {
-                if (txtHospital_Address.Items[i].ToString().CompareTo(txtHospital_Address.Text) == 0)
-                {
-                    txtHospital_Name.Text = txtHospital_Name.Items[i].ToString();
-                    txtHospital_Phone_Number.Text = txtHospital_Phone_Number.Items[i].ToString();
-                    txtState.Text = txtState.Items[i].ToString();
-                    break;
-                }
-            }
-        }
-
-        private void txtHospital_Phone_Number_TextChanged(object sender, EventArgs e)
-        {
-            for (int i = 0; i < txtHospital_Phone_Number.Items.Count; i++)
-            {
-                if (txtHospital_Phone_Number.Items[i].ToString().CompareTo(txtHospital_Phone_Number.Text) == 0)
-                {
-                    txtHospital_Name.Text = txtHospital_Name.Items[i].ToString();
-                    txtHospital_Address.Text = txtHospital_Address.Items[i].ToString();
-                    txtState.Text = txtState.Items[i].ToString();
-                    break;
-                }
-            }
-        }
-
-        private void txtState_TextChanged(object sender, EventArgs e)
-        {
-            for (int i = 0; i < txtState.Items.Count; i++)
-            {
-                if (txtState.Items[i].ToString().CompareTo(txtState.Text) == 0)
-                {
-                    txtHospital_Name.Text = txtHospital_Name.Items[i].ToString();
-                    txtHospital_Address.Text = txtHospital_Address.Items[i].ToString();
-                    txtHospital_Phone_Number.Text = txtHospital_Phone_Number.Items[i].ToString();
-                    break;
-                }
-            }
-        }
-
-        private void btnActionDoctor_Click_1(object sender, EventArgs e)
-        {
-            if(CurrentHospitalID==-1)
-            {
-                MessageBox.Show("Не сте избрали болница!");
-                return;
-            }
-            try
-            {
-                string firstName = txtDoctor_First_Name.Text;string lastName = txt_Doctor_Last_Name.Text;int departmentId = int.Parse(txt_Doctor_Department_ID.Text);
-                string phoneNum = txt_Doctor_Phone_Number.Text;
-                Doctor doctor=new Doctor(firstName,lastName,phoneNum,departmentId);
-                if (btnRegister.Checked)
-                {
-                    DoctorController.AddDoctor(doctor);
-                    txtDoctor_First_Name.Text = "";
-                    txt_Doctor_Department_ID.Text = "";
-                    txt_Doctor_Phone_Number.Text = "";
-                    txt_Doctor_Last_Name.Text = "";
-                    MessageBox.Show("Успешно добавен лекар.");
-                }
-                else if(btnRemove.Checked)
-                {
-                    if (DoctorController.DoctorExists(doctor))
-                    {
-                        //TODO Изтрий доктор
+                        dataView.DataSource = HospitalController.ReturnHospitalById(int.Parse(txtSearch.Text));
                     }
                     else
                     {
-                        MessageBox.Show("Такъв доктор не съществува!");
+                        dataView.DataSource = HospitalController.ReturnHospitalByName(txtSearch.Text.Trim());
                     }
                 }
             }
-            catch (Exception exception)
+            else if(usedTable=="Doctor")
             {
-                MessageBox.Show(exception.Message);
-            }
-         
-        }
-
-        private void txtDoctor_First_Name_TextChanged(object sender, EventArgs e)
-        {
-            for (int i = 0; i < txtDoctor_First_Name.Items.Count; i++)
-            {
-                if (txtDoctor_First_Name.Items[i].ToString().CompareTo(txtDoctor_First_Name.Text) == 0)
+                if (String.IsNullOrWhiteSpace(txtSearch.Text))
                 {
-                    txt_Doctor_Last_Name.Text = txt_Doctor_Last_Name.Items[i].ToString();
-                    txt_Doctor_Phone_Number.Text = txt_Doctor_Phone_Number.Items[i].ToString();
-                    txt_Doctor_Department_ID.Text = txt_Doctor_Department_ID.Items[i].ToString();
-                    break;
+                    dataView.DataSource = DoctorController.ReturnAllDoctors();
+                }
+                else
+                {
+                    bool isNum = true;
+                    for (int i = 0; i < txtSearch.Text.Length; i++)
+                    {
+                        if (txtSearch.Text[i] >= 'a' && txtSearch.Text[i] <= 'z' || (txtSearch.Text[i] >= 'A' && txtSearch.Text[i] <= 'Z'))
+                        {
+                            isNum = false; break;
+                        }
+                    }
+                    if (isNum)
+                    {
+                        dataView.DataSource = DoctorController.ReturnDoctorById(int.Parse(txtSearch.Text));
+                    }
+                    else
+                    {
+                        string[] splitName = txtSearch.Text.Split().ToArray();
+                        if (splitName.Length == 1)
+                            dataView.DataSource = DoctorController.ReturnDoctorByFirstName(txtSearch.Text.Trim());
+                        else dataView.DataSource = DoctorController.ReturnDoctorByFullName(splitName[0], splitName[1]);
+                    }
+                }
+            }
+            else if(usedTable=="Staff")
+            {
+                if (String.IsNullOrWhiteSpace(txtSearch.Text))
+                {
+                    dataView.DataSource = StaffController.ReturnAllStaff();
+                }
+                else
+                {
+                    bool isNum = true;
+                    for (int i = 0; i < txtSearch.Text.Length; i++)
+                    {
+                        if (txtSearch.Text[i] >= 'a' && txtSearch.Text[i] <= 'z' || (txtSearch.Text[i] >= 'A' && txtSearch.Text[i] <= 'Z'))
+                        {
+                            isNum = false; break;
+                        }
+                    }
+                    if (isNum)
+                    {
+                        dataView.DataSource = StaffController.ReturnStaffById(int.Parse(txtSearch.Text));
+                    }
+                    else
+                    {
+                        string[] splitName = txtSearch.Text.Split().ToArray();
+                        if (splitName.Length == 1)
+                            dataView.DataSource = StaffController.ReturnStaffByFirstName(txtSearch.Text.Trim());
+                        else dataView.DataSource = StaffController.ReturnStaffByFullName(splitName[0], splitName[1]);
+                    }
+                }
+            }
+            else if(usedTable=="Patient")
+            {
+                if (String.IsNullOrWhiteSpace(txtSearch.Text))
+                {
+                    dataView.DataSource = PatientController.ReturnAllPatients();
+                }
+                else
+                {
+                    bool isNum = true;
+                    for (int i = 0; i < txtSearch.Text.Length; i++)
+                    {
+                        if (txtSearch.Text[i] >= 'a' && txtSearch.Text[i] <= 'z' || (txtSearch.Text[i] >= 'A' && txtSearch.Text[i] <= 'Z'))
+                        {
+                            isNum = false; break;
+                        }
+                    }
+                    if (isNum)
+                    {
+                        dataView.DataSource = PatientController.ReturnPatientById(int.Parse(txtSearch.Text));
+                    }
+                    else
+                    {
+                        string[] splitName = txtSearch.Text.Split().ToArray();
+                        if (splitName.Length == 1)
+                            dataView.DataSource = PatientController.ReturnPatientByFirstName(txtSearch.Text.Trim());
+                        else dataView.DataSource = PatientController.ReturnPatientByFullName(splitName[0], splitName[1]);
+                    }
+                }
+            }
+            else if(usedTable=="Appointment")
+            {
+                bool isNum = true;
+                for (int i = 0; i < txtSearch.Text.Length; i++)
+                {
+                    if (txtSearch.Text[i] >= 'a' && txtSearch.Text[i] <= 'z' || (txtSearch.Text[i] >= 'A' && txtSearch.Text[i] <= 'Z'))
+                    {
+                        isNum = false; break;
+                    }
+                }
+                if(isNum&&!string.IsNullOrWhiteSpace(txtSearch.Text))
+                {
+                    dataView.DataSource = AppointmentController.ReturnAppointmentByPatientId(int.Parse(txtSearch.Text));
+                }
+                else
+                {
+                    dataView.DataSource = AppointmentController.ReturnAllAppointments();
+                }
+            }
+            else if(usedTable=="Department")
+            {
+                if (String.IsNullOrWhiteSpace(txtSearch.Text))
+                {
+                    dataView.DataSource = DepartmentController.ReturnAllDepartments();
+                }
+                else
+                {
+                    bool isNum = true;
+                    for (int i = 0; i < txtSearch.Text.Length; i++)
+                    {
+                        if (txtSearch.Text[i] >= 'a' && txtSearch.Text[i] <= 'z' || (txtSearch.Text[i] >= 'A' && txtSearch.Text[i] <= 'Z'))
+                        {
+                            isNum = false; break;
+                        }
+                    }
+                    if (isNum)
+                    {
+                        dataView.DataSource = DepartmentController.ReturnDepartmentById(int.Parse(txtSearch.Text));
+                    }
+                    else
+                    {
+                        dataView.DataSource = DepartmentController.ReturnDepartmentByName(txtSearch.Text);
+                    }
                 }
             }
         }
 
-        private void txt_Doctor_Last_Name_TextChanged(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < txt_Doctor_Last_Name.Items.Count; i++)
+            if(usedTable=="Hospital")
             {
-                if (txt_Doctor_Last_Name.Items[i].ToString().CompareTo(txt_Doctor_Last_Name.Text) == 0)
-                {
-                    txtDoctor_First_Name.Text = txtDoctor_First_Name.Items[i].ToString();
-                    txt_Doctor_Phone_Number.Text = txt_Doctor_Phone_Number.Items[i].ToString();
-                    txt_Doctor_Department_ID.Text = txt_Doctor_Department_ID.Items[i].ToString();
-                    break;
-                }
+                HospitalWindow hw=new HospitalWindow();
+                hw.action = "Register";
+                this.Hide();
+                hw.ShowDialog();
+                this.Show();
+                dataView.DataSource=HospitalController.ReturnAllHospitals();
+            }
+            else if(usedTable=="Doctor")
+            {
+                DoctorWindow docWindow=new DoctorWindow();
+                docWindow.action = "Register";
+                this.Hide();
+                docWindow.ShowDialog();
+                this.Show();
+                dataView.DataSource = DoctorController.ReturnAllDoctors();
+            }
+            else if(usedTable== "Department")
+            {
+                DepartmentWindow departWindow=new DepartmentWindow();
+                departWindow.action = "Register";
+                this.Hide();
+                departWindow.ShowDialog();
+                this.Show();
+                dataView.DataSource=DepartmentController.ReturnAllDepartments();
+            }
+            else if(usedTable== "Staff")
+            {
+                   StaffWindow staffWin=new StaffWindow();
+                staffWin.action = "Register";
+                this.Hide();
+                staffWin.ShowDialog();
+                this.Show();
+                dataView.DataSource = StaffController.ReturnAllStaff();
+            }
+            else if(usedTable=="Appointment")
+            {
+                AppointmentWindow appointmentWindow=new AppointmentWindow();
+                appointmentWindow.action = "Register";
+                this.Hide();
+                appointmentWindow.ShowDialog();
+                this.Show();
+                dataView.DataSource = AppointmentController.ReturnAllAppointments();
+            }
+            else if(usedTable=="Patient")
+            {
+                PatientWindow patWin=new PatientWindow();
+                patWin.action = "Register";
+                this.Hide(); patWin.ShowDialog();
+                this.Show();
+                dataView.DataSource=PatientController.ReturnAllPatients();
+            }
+        }
+        private int GetIndexOfMarkedCellOrColumn()
+        {
+            int index = 0;
+            if (dataView.SelectedRows.Count == 1)
+            {
+                index = dataView.SelectedRows[0].Index;
+            }
+            else if (dataView.SelectedRows.Count == 0)
+            {
+                index = dataView.CurrentCell.RowIndex;
+            }
+            return index;
+        }
+        private Hospital GetHospital(int indexMarkedRow)
+        {
+            int id = int.Parse(dataView.Rows[indexMarkedRow].Cells[0].Value.ToString());
+            string name = dataView.Rows[indexMarkedRow].Cells[1].Value.ToString();
+            string address = dataView.Rows[indexMarkedRow].Cells[2].Value.ToString();
+            string phoneNum = dataView.Rows[indexMarkedRow].Cells[3].Value.ToString();
+            string state = dataView.Rows[indexMarkedRow].Cells[4].Value.ToString();
+            Hospital hospital = new Hospital(name, address, phoneNum, state);
+            hospital.Id = id;
+            return hospital;
+        }
+        private Doctor GetDoctor(int indexMarkedRow)
+        {
+            int id = int.Parse(dataView.Rows[indexMarkedRow].Cells[0].Value.ToString());
+            string firstName = dataView.Rows[indexMarkedRow].Cells[1].Value.ToString();
+            string lastName = dataView.Rows[indexMarkedRow].Cells[2].Value.ToString();
+            int departmentId =int.Parse(dataView.Rows[indexMarkedRow].Cells[3].Value.ToString());
+            string phoneNumber = dataView.Rows[indexMarkedRow].Cells[4].Value.ToString();
+            Doctor doctor = new Doctor(firstName, lastName, phoneNumber, departmentId);
+            doctor.Id=id;
+            return doctor;
+        }
+        public Department GetDepartment(int indexMarkedRow)
+        {
+            int id = int.Parse(dataView.Rows[indexMarkedRow].Cells[0].Value.ToString());
+            int hospital_id = int.Parse(dataView.Rows[indexMarkedRow].Cells[1].Value.ToString());
+            string name = dataView.Rows[indexMarkedRow].Cells[2].Value.ToString();
+
+            Department department=new Department(hospital_id, name);
+            department.Id = id;
+            return department;
+        }
+        public Staff GetStaff(int indexMarkedRow)
+        {
+            int id = int.Parse(dataView.Rows[indexMarkedRow].Cells[0].Value.ToString());
+            int departmentId = int.Parse(dataView.Rows[indexMarkedRow].Cells[1].Value.ToString());
+            string firstName = dataView.Rows[indexMarkedRow].Cells[2].Value.ToString();
+            string lastName = dataView.Rows[indexMarkedRow].Cells[3].Value.ToString();
+            string address = dataView.Rows[indexMarkedRow].Cells[4].Value.ToString();
+            string phoneNumber = dataView.Rows[indexMarkedRow].Cells[5].Value.ToString();
+            Staff staff=new Staff(departmentId, firstName, lastName, address, phoneNumber);
+            staff.Id = id;
+            return staff;   
+        }
+        public Appointment GetAppointment(int indexMarkedRow)
+        {
+            int patientId = int.Parse(dataView.Rows[indexMarkedRow].Cells[0].Value.ToString());
+            int doctorId = int.Parse(dataView.Rows[indexMarkedRow].Cells[1].Value.ToString());
+            DateTime date =DateTime.Parse( dataView.Rows[indexMarkedRow].Cells[2].Value.ToString());
+            Appointment appointment=new Appointment(patientId,doctorId,date);
+            return appointment;
+        }
+        public Patient GetPatient(int indexMarkedRow)
+        {
+            int patientId = int.Parse(dataView.Rows[indexMarkedRow].Cells[0].Value.ToString());
+            string firstName = dataView.Rows[indexMarkedRow].Cells[1].Value.ToString();
+            string lastName = dataView.Rows[indexMarkedRow].Cells[2].Value.ToString();
+            string address = dataView.Rows[indexMarkedRow].Cells[3].Value.ToString();
+            string phoneNumber = dataView.Rows[indexMarkedRow].Cells[4].Value.ToString();
+          Patient patient=new Patient(firstName,lastName,address,phoneNumber);
+            patient.Id= patientId;
+            return patient;
+        }
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (usedTable == "Hospital")
+            {
+                int index=GetIndexOfMarkedCellOrColumn();
+                Hospital hospital = GetHospital(index);
+                HospitalWindow hw = new HospitalWindow(hospital);
+                hw.action = "Update";
+                this.Hide();
+                hw.ShowDialog();
+                this.Show();
+                dataView.DataSource = HospitalController.ReturnAllHospitals();
+            }
+            else if(usedTable=="Doctor")
+            {
+                int index= GetIndexOfMarkedCellOrColumn();
+                Doctor doctor = GetDoctor(index);
+                DoctorWindow docWin = new DoctorWindow(doctor);
+                this.Hide();
+                docWin.action = "Update";
+                docWin.ShowDialog();
+                this.Show();
+                dataView.DataSource = DoctorController.ReturnAllDoctors();
+            }
+            else if(usedTable=="Department")
+            {
+                int index = GetIndexOfMarkedCellOrColumn();
+                Department department = GetDepartment(index);
+                DepartmentWindow depWin = new DepartmentWindow(department);
+                this.Hide();
+                depWin.action = "Update";
+                depWin.ShowDialog();
+                this.Show();
+                dataView.DataSource = DepartmentController.ReturnAllDepartments();
+            }
+            else if(usedTable=="Staff")
+            {
+                int index=GetIndexOfMarkedCellOrColumn();
+                Staff staff = GetStaff(index);
+                StaffWindow staffWin=new StaffWindow(staff);
+                this.Hide();
+                staffWin.action = "Update";
+                staffWin.ShowDialog();
+                this.Show();
+                dataView.DataSource = StaffController.ReturnAllStaff();
+            }
+            else if (usedTable == "Appointment")
+            {
+                int index = GetIndexOfMarkedCellOrColumn();
+                Appointment appointment = GetAppointment(index);
+                AppointmentWindow appWin = new AppointmentWindow(appointment);
+                this.Hide();
+                appWin.action = "Update";
+                appWin.ShowDialog();
+                this.Show();
+                dataView.DataSource = AppointmentController.ReturnAllAppointments();
+            }
+            else if(usedTable=="Patient")
+            {
+                int index= GetIndexOfMarkedCellOrColumn();
+                Patient patient = GetPatient(index);
+                PatientWindow patWin = new PatientWindow(patient);
+                this.Hide();
+                patWin.action = "Update";
+                patWin.ShowDialog();
+                this.Show();
+                dataView.DataSource = PatientController.ReturnAllPatients();
             }
         }
 
-        private void txt_Doctor_Department_ID_TextChanged(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < txt_Doctor_Department_ID.Items.Count; i++)
+            if(usedTable=="Hospital")
             {
-                if (txt_Doctor_Department_ID.Items[i].ToString().CompareTo(txt_Doctor_Department_ID.Text) == 0)
+                int index= GetIndexOfMarkedCellOrColumn();
+                Hospital hospital = GetHospital(index);
+               DialogResult dialogRes=MessageBox.Show($"Are you sure you want to delete hospital {hospital.Name}?","Deleting Hospital",MessageBoxButtons.YesNo);
+                if(dialogRes==DialogResult.Yes)
                 {
-                    txtDoctor_First_Name.Text = txtDoctor_First_Name.Items[i].ToString();
-                    txt_Doctor_Phone_Number.Text = txt_Doctor_Phone_Number.Items[i].ToString();
-                    txt_Doctor_Last_Name.Text = txt_Doctor_Last_Name.Items[i].ToString();
-                    break;
+                    HospitalController.DeleteHospital(hospital.Id);
+                    dataView.DataSource = HospitalController.ReturnAllHospitals();
+                    MessageBox.Show($"Успешно изтрихте болница :{hospital.Name}");
+                }
+
+            }
+            else if(usedTable=="Doctor")
+            {
+                int index= GetIndexOfMarkedCellOrColumn();
+                Doctor doctor=GetDoctor(index);
+                DialogResult dialogRes = MessageBox.Show($"Are you sure you want to delete doctor {doctor.FirstName} {doctor.LastName}?", "Deleting Doctor", MessageBoxButtons.YesNo);
+                if (dialogRes == DialogResult.Yes)
+                {
+                    DoctorController.DeleteDoctor(doctor.Id);
+                    MessageBox.Show($"Успешно изтрихте лекар :{doctor.FirstName} {doctor.LastName}");
+                    dataView.DataSource=DoctorController.ReturnAllDoctors();
                 }
             }
-        }
-
-        private void txt_Doctor_Phone_Number_TextChanged(object sender, EventArgs e)
-        {
-            for (int i = 0; i < txt_Doctor_Phone_Number.Items.Count; i++)
+            else if(usedTable=="Department")
             {
-                if (txt_Doctor_Phone_Number.Items[i].ToString().CompareTo(txt_Doctor_Phone_Number.Text) == 0)
+                int index= GetIndexOfMarkedCellOrColumn();
+                Department department = GetDepartment(index);
+                DialogResult dialogRes = MessageBox.Show($"Are you sure you want to delete department {department.Name} with hospital id: {department.HospitalId}?", "Deleting Department", MessageBoxButtons.YesNo);
+                if (dialogRes == DialogResult.Yes)
                 {
-                    txtDoctor_First_Name.Text = txtDoctor_First_Name.Items[i].ToString();
-                    txt_Doctor_Department_ID.Text = txt_Doctor_Department_ID.Items[i].ToString();
-                    txt_Doctor_Last_Name.Text = txt_Doctor_Last_Name.Items[i].ToString();
-                    break;
+                    DepartmentController.DeleteDepartment(department.Id);
+                    MessageBox.Show($"Успешно изтрихте отдел :{department.Name}");
+                    dataView.DataSource = DepartmentController.ReturnAllDepartments();
+                }
+            }
+            else if(usedTable=="Staff")
+            {
+                int index= GetIndexOfMarkedCellOrColumn();  
+                Staff staff=GetStaff(index);
+                DialogResult dialogRes = MessageBox.Show($"Are you sure you want to delete Staff {staff.FirstName} {staff.LastName}?", "Deleting Staff", MessageBoxButtons.YesNo);
+                if (dialogRes == DialogResult.Yes)
+                {
+                    StaffController.DeleteStaff(staff.Id);
+                    MessageBox.Show($"Успешно изтрихте служител :{staff.FirstName} {staff.LastName}");
+                    dataView.DataSource = StaffController.ReturnAllStaff();
+                }
+            }
+            else if(usedTable=="Appointment")
+            {
+                int index= GetIndexOfMarkedCellOrColumn();
+                Appointment appointment=GetAppointment(index);
+                DialogResult dialogRes = MessageBox.Show($"Are you sure you want to delete Appointment with Doctor id: {appointment.DoctorId} And Patient id:{appointment.PatientId}?", "Deleting Appointment", MessageBoxButtons.YesNo);
+                if (dialogRes == DialogResult.Yes)
+                {
+                    AppointmentController.DeleteAppointment(appointment);
+                    MessageBox.Show($"Успешно изтрихте прегледа");
+                    dataView.DataSource = AppointmentController.ReturnAllAppointments();
+                }
+            }
+            else if(usedTable=="Patient")
+            {
+                int index = GetIndexOfMarkedCellOrColumn();
+                Patient patient=GetPatient(index);
+                DialogResult dialogRes = MessageBox.Show($"Are you sure you want to delete Patient: {patient.FirstName} {patient.LastName}?", "Deleting Patient", MessageBoxButtons.YesNo);
+                if (dialogRes == DialogResult.Yes)
+                {
+                    PatientController.DeletePatient(patient.Id);
+                    MessageBox.Show($"Успешно изтрихте пациент");
+                    dataView.DataSource= PatientController.ReturnAllPatients();
                 }
             }
         }

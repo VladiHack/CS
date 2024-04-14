@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HospitalProject.Controller;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace HospitalProject.Model
 {
     public class Staff:Person
     {
-        int staffId;
+        int id;
         int departmentId;
         string address;
 
@@ -22,11 +23,15 @@ namespace HospitalProject.Model
             PhoneNumber = phoneNumber;
         }
 
-        public int StaffId
+        public int Id
         {
             get
             {
-                return this.staffId;
+                return this.id;
+            }
+            set
+            {
+                this.id = value;
             }
         }
         public int DepartmentId
@@ -37,13 +42,13 @@ namespace HospitalProject.Model
             }
             set
             {
-                if(value<1)
+                if(!DepartmentController.CheckIfDepartmentExists(value))
                 {
-                    throw new ArgumentException("Невалиден номер на отдел!");
+                    throw new ArgumentException("Такъв отдел не съществува!");
                 }
                 else
                 {
-                    this.staffId = value;
+                    this.departmentId = value;
                 }
             }
         }

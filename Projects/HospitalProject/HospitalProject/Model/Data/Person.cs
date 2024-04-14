@@ -28,7 +28,7 @@ namespace HospitalProject.Model
             {
                 if (String.IsNullOrWhiteSpace(value) || value.Length < 2)
                 {
-                    throw new ArgumentException("Името на пациента е твърде късо!");
+                    throw new ArgumentException("Името е твърде късо!");
                 }
                 else
                 {
@@ -46,7 +46,7 @@ namespace HospitalProject.Model
             {
                 if (String.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentException("Въведете фамилия на служител!");
+                    throw new ArgumentException("Въведете фамилия!");
                 }
                 else
                 {
@@ -71,9 +71,9 @@ namespace HospitalProject.Model
                         break;
                     }
                 }
-                if (String.IsNullOrWhiteSpace(value) || !correctNum || value.Length != 10)
+                if (String.IsNullOrWhiteSpace(value) || !correctNum)
                 {
-                    throw new ArgumentException("Въведете валиден телефонен номер на служителя");
+                    throw new ArgumentException("Въведете валиден телефонен номер!");
                 }
                 else
                 {

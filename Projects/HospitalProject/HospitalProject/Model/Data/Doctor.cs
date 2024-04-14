@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HospitalProject.Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,13 +29,13 @@ namespace HospitalProject.Model
             }
             set
             {
-                if(value<1)
+                if(DepartmentController.CheckIfDepartmentExists(value))
                 {
-                    throw new ArgumentException("Невалиден номер на отдел!");
+                    this.departmentId = value;
                 }
                 else
                 {
-                    this.departmentId = value;
+                    throw new ArgumentException("No hospital contains such department id!");
                 }
             }
         }

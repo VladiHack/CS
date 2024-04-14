@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HospitalProject.Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -19,14 +20,17 @@ namespace HospitalProject.Model
             this.DoctorId = doctorId;
             this.Date = date;
         }
+        public Appointment()
+        {
 
+        }
 
         public int PatientId
         {
             get { return patientId; }
             set
             {
-                if (value < 1) throw new ArgumentException("Въведете правилен номер на пациент!");
+                if (PatientController.CheckIfPatientExists(value)==false) throw new ArgumentException("Такъв пациент не съществува!");
                 else this.patientId = value;
             }
         }
@@ -39,7 +43,7 @@ namespace HospitalProject.Model
             }
             set
             {
-                if (value < 1) throw new ArgumentException("Въведете правилен номер на доктор!");
+                if (DoctorController.CheckIfDoctorExistsById(value)==false) throw new ArgumentException("Такъв доктор не съществува!");
                 else this.doctorId= value;
             }
         }

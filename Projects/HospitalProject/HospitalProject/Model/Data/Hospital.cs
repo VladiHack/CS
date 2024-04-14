@@ -33,6 +33,10 @@ namespace HospitalProject.Model
             {
                 return this.id;
             }
+            set
+            {
+                this.id = value;
+            }
         }
         public string Name
         {
